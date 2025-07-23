@@ -36,6 +36,11 @@ class Cart:
         cart = self.cart.values()
         total = sum(int(item['price']) * int(item['quantity']) + int(item['post_price']) * int(item['quantity']) for item in cart)
         return total
+    
+    def post_price(self):
+        cart = self.cart.values()
+        post_price = sum(int(item['post_price']) * int(item['quantity']) for item in cart)
+        return post_price
 
     def delete(self , id):
         if id in self.cart:

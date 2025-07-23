@@ -6,6 +6,7 @@ from shop.models import Product
 class Order(models.Model):
     user = models.ForeignKey(User , on_delete=models.CASCADE , related_name='orders' , verbose_name='کاربر')
     total_price = models.IntegerField(default=0, verbose_name='قیمت کلی')
+    post_price = models.IntegerField(default=0, verbose_name='هزینه پست')
     created_at = models.DateTimeField(auto_now_add=True)
     is_pay = models.BooleanField(default=False , verbose_name='ایا پرداخت شده است ؟')
     addresses = models.ForeignKey(Address , on_delete = models.CASCADE , related_name='order_address' , blank=True , null=True, verbose_name='آدرس کاربر')

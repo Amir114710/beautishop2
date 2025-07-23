@@ -76,12 +76,15 @@
             <p>اندازه: <span class="cs_primary_color">{{x.product.value}} </span></p>
             <p>تعداد: {{x.quantity}}</p>
             <p>رنگ: {{x.color}}</p>
-            <p>هزینه پست: {{x.post_price}}</p>
             </li>
             {% endfor %}
         </ul>
         <div class="cs_height_40 cs_height_lg_30"></div>
         <ul class="cs_card_price_list cs_type_1 cs_mp_0">
+            <li class="cs_total_price">
+            <span class="cs_fs_18 cs_primary_color">هزینه پست</span>
+            <span class="cs_fs_18 cs_primary_color">{{order.post_price}} تومان</span>
+            </li>
             <li class="cs_total_price">
             {{text}}
             <span class="cs_fs_18 cs_primary_color">مجموع</span>

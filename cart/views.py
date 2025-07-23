@@ -50,7 +50,7 @@ class OrderDetailView(AddressRequirdMixins , View):
 class OrderCreationView(AddressRequirdMixins , View):
     def get(self , request):
         cart = Cart(request)
-        order = Order.objects.create(user = request.user , total_price = cart.total())
+        order = Order.objects.create(user = request.user , total_price = cart.total() , post_price = cart.post_price())
         for item in cart:
             OrderItem.objects.create(order=order , product = item['product'] , quantity = item['quantity'] , color = item['color'] , price = item['price'] , post_price = item['post_price'])
         cart.remove_cart()

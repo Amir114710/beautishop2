@@ -35,17 +35,17 @@
   --gray: #f2f2f2;
   --accent-light: #faeff2;
   --border: rgba(99, 99, 99, 0.3);
-  --primary-font: "IRANSansWeb";
-  --secondary-font: "IRANSansWeb";
+  --primary-font: "Vazir";
+  --secondary-font: "Vazir";
 }
 
 @font-face {
-  font-family: "IRANSansWeb";
-  src: url(../fonts/IRANSansWeb.eot),
-  url(../fonts/IRANSansWeb.ttf),
-  url(../fonts/IRANSansWeb.svg),
-  url(../fonts/IRANSansWeb.woff),
-  url(../fonts/IRANSansWeb.woff2);
+  font-family: "Vazir";
+  src: url(../fonts/Vazir.eot),
+  url(../fonts/Vazir.ttf),
+  url(../fonts/Vazir.svg),
+  url(../fonts/Vazir.woff),
+  url(../fonts/Vazir.woff2);
 }
 
 .rtl {
@@ -64,9 +64,9 @@ body,
 html {
   color: var(--secondary);
   font-family: var(--secondary-font);
-  font-size: 16px;
-  line-height: 1.5em;
-  font-weight: 400;
+  font-size: 500px!important;
+  line-height: 2em;
+  font-weight: 0;
   overflow-x: clip;
   text-align: right!important;
   font-size: 15px!important;
@@ -81,9 +81,9 @@ h6 {
   clear: both;
   color: var(--primary);
   padding: 0;
-  margin: 0 0 20px 0;
-  font-weight: 700;
-  line-height: 1.2em;
+  margin: 0 0 0px 0;
+  font-weight: 0;
+  line-height: 2em;
   font-family: var(--primary-font);
 }
 
@@ -96,27 +96,27 @@ h6 {
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 20px;
 }
 
 h2 {
-  font-size: 42px;
-}
-
-h3 {
-  font-size: 30px;
-}
-
-h4 {
-  font-size: 24px;
-}
-
-h5 {
   font-size: 18px;
 }
 
-h6 {
+h3 {
+  font-size: 17px;
+}
+
+h4 {
   font-size: 16px;
+}
+
+h5 {
+  font-size: 15px;
+}
+
+h6 {
+  font-size: 15px;
 }
 
 p {
@@ -1700,22 +1700,22 @@ select {
 }
 
 .cs_fs_100 {
-  font-size: 100px;
+  font-size: 70px;
   line-height: 1em;
 }
 @media (max-width: 1600px) {
   .cs_fs_100 {
-    font-size: 92px;
+    font-size: 70px;
   }
 }
 @media (max-width: 1400px) {
   .cs_fs_100 {
-    font-size: 82px;
+    font-size: 62px;
   }
 }
 @media (max-width: 991px) {
   .cs_fs_100 {
-    font-size: 76px;
+    font-size: 56px;
   }
 }
 @media (max-width: 575px) {
