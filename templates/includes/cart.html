@@ -1,0 +1,64 @@
+{% load static %}
+<div class="cs_cart_card_wrap">
+      <div class="cs_cart_card rtl">
+        <div class="cs_cart_card_head cs_gray_bg">
+          <button class="cs_cart_close">بستن</button>
+        </div>
+        <div class="cs_cart_card_body">
+          <div class="cs_cart_card_body_in">
+           <ul class="cs_cart_list cs_mp_0 rtl">
+            {% for x in cart %}
+            <li>
+                <div class="cs_product_card cs_style_11 cs_radius_10">
+                <a href="{% url 'shop:product_detail' x.product.slug %}" class="cs_product_thumb">
+                    <img src="{{x.product.image1.url}}" alt="Product">
+                </a>
+                <div class="cs_product_card_right">
+                    <div class="cs_product_category text-uppercase cs_fs_14 cs_light">
+                    <a href="{% url 'shop:product_detail' x.product.slug %}">{{x.product.category.first}}</a>
+                    </div>
+                    <h2 class="cs_product_title cs_fs_24 cs_medium cs_secondary_font">
+                    <a href="{% url 'shop:product_detail' x.product.slug %}">{{x.product.title}}</a>
+                    </h2>
+                    <p class="cs_light cs_primary_color mb-0">اندازه: {{x.product.inventory}} </p>
+                    <p class="cs_product_price cs_fs_24 cs_primary_color cs_medium cs_accent_color">{{x.product.price}} تومان</p>
+                    <div class="cs_quantity cs_style_1">
+                    <button class="cs_quantity_button">
+                                                
+                    </button>
+                    <span class="cs_quantity_input cs_primary_color cs_medium">{{x.quantity}}</span>
+                    <button class="cs_quantity_button">
+                                                  
+                    </button>
+                    <a href="{% url 'cart:cart_delete' x.id %}">
+                        <button class="cs_product_card_close">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.02556 21C0.822736 21 0.624454 20.9399 0.455797 20.8272C0.287141 20.7146 0.155687 20.5544 0.0780629 20.367C0.000439235 20.1796 -0.0198669 19.9734 0.0197131 19.7745C0.0592931 19.5756 0.156981 19.3929 0.30042 19.2495L19.2493 0.300367C19.4416 0.108045 19.7024 0 19.9744 0C20.2464 0 20.5072 0.108045 20.6996 0.300367C20.8919 0.49269 20.9999 0.753534 20.9999 1.02552C20.9999 1.2975 20.8919 1.55835 20.6996 1.75067L1.75071 20.6998C1.65557 20.7951 1.54253 20.8707 1.41809 20.9222C1.29364 20.9737 1.16025 21.0002 1.02556 21Z" fill="currentColor"/>
+                          <path d="M19.9744 21C19.8397 21.0002 19.7063 20.9737 19.5818 20.9222C19.4574 20.8707 19.3444 20.7951 19.2492 20.6998L0.300364 1.75067C0.108044 1.55835 0 1.2975 0 1.02552C0 0.753534 0.108044 0.49269 0.300364 0.300367C0.492684 0.108045 0.753525 0 1.02551 0C1.29749 0 1.55833 0.108045 1.75065 0.300367L20.6995 19.2495C20.843 19.3929 20.9406 19.5756 20.9802 19.7745C21.0198 19.9734 20.9995 20.1796 20.9219 20.367C20.8442 20.5544 20.7128 20.7146 20.5441 20.8272C20.3755 20.9399 20.1772 21 19.9744 21Z" fill="currentColor"/>
+                        </svg>                  
+                        </button>
+                    </a>
+                    </div>
+                </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+          </div>
+        </div>
+        <div class="cs_cart_card_footer">
+          <div class="cs_cart_card_subtotal">
+            <span>مجموع:</span>
+            <span class="cs_primary_color cs_semibold">{{cart.total}}تومان</span>
+          </div>
+          <a href="{% url 'cart:cart_main_list' %}" class="cs_btn cs_style_2 cs_medium cs_type_1 w-100">                                               
+            <span>مشاهده سبد خرید</span>
+          </a>
+          <div class="cs_height_10 cs_height_lg_10"></div>
+        <a href="{% url 'cart:order_add' %}">
+          <button class="cs_btn cs_style_1 cs_fs_18 w-100"><span>برای تسویه حساب ادامه دهید</span></button>
+          </a>
+        </div>
+      </div>
+      <div class="cs_cart_overlay"></div>
+    </div>

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+404
+{% endblock %}
+{% block content %}
+<!-- Start Error Section -->
+<div class="cs_height_100 cs_height_lg_70"></div>
+<div class="container">
+  <div class="cs_error text-center">
+    <img src="assets/images/404.svg" alt="Error">
+    <h1 class="cs_fs_54">اوپس! چیزی اشتباه شد</h1>
+    <a href="{% url 'home:main' %}" class="cs_btn cs_style_1 cs_fs_18 cs_medium">بازگشت به خانه</a>
+  </div>
+</div>
+<div class="cs_height_100 cs_height_lg_70"></div>
+<!-- End Error Section -->
+{% endblock %}

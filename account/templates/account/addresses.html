@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Address
+{% endblock %}
+{% block content %}
+<div class="container rtl">
+    <div class="cs_height_45 cs_height_lg_45"></div>
+    <ol class="breadcrumb cs_fs_18 mb-0">
+    <li class="breadcrumb-item"><a href="{% url 'home:main' %}">خانه/</a></li>
+    <li class="breadcrumb-item"><a href="{% url 'account:profile' %}">حساب من/</a></li>
+    <li class="breadcrumb-item active">آدرس</li>
+    </ol>
+    <div class="cs_height_30 cs_height_lg_30"></div>
+</div>
+<div class="container rtl">
+    <div class="cs_account_wrap">
+    <div class="cs_account_nav cs_radius_10">
+          <div class="cs_account_avatar">
+            <img src="{{ request.user.image.url }}" alt="">
+            <h3 class=""><span>سلام,</span> <br>{{request.user.Full_name}}</h3>
+          </div>
+          <ul class="cs_account_nav_list cs_mp_0">
+            <li class="{% if request.resolver_match.url_name == 'profile'%}active{% endif %}">
+              <a href="{% url 'account:profile' %}"><span>داشبورد</span></a>
+            </li>
+            <li class="{% if request.resolver_match.url_name == 'orderlist'%}active{% endif %}">
+              <a href="{% url 'account:orderlist' %}"><span>سفارشات</span></a>
+            </li>
+            <li class="{% if request.resolver_match.url_name == 'address'%}active{% endif %}">
+              <a href="{% url 'account:address' %}"><span>آدرس</span></a>
+            </li>
+            <li class="{% if request.resolver_match.url_name == 'edit_profile'%}active{% endif %}">
+              <a href="{% url 'account:edit_profile' %}"><span>جزئیات حساب</span></a>
+            </li>
+            <li class="{% if request.resolver_match.url_name == 'whishlist'%}active{% endif %}">
+              <a href="{% url 'account:whishlist' %}"><span> علاقه مندی ها</span></a>
+            </li>
+            {% if request.user.is_admin == True %}
+            <li class="{% if request.resolver_match.url_name == 'admin_order'%}active{% endif %}">
+              <a href="{% url 'account:admin_order' %}"><span> لیست سفارشات</span></a>
+            </li>
+            {% endif %}
+            <li>
+              <a href="{% url 'account:logout' %}"><span>خروج از سیستم</span></a>
+            </li>
+          </ul>
+        </div>
+    <div class="cs_account_content">
+        <div class="cs_account_card cs_radius_10">
+        <div class="cs_account_card_head cs_type_1">
+            <h3 class="cs_fs_18 mb-0 cs_semibold">آدرس های زیر به طور پیش فرض در صفحه پرداخت استفاده می شود.</h3>
+        </div>
+        <div class="cs_plr_25">
+            <!-- <div class="cs_height_30 cs_height_lg_30"></div> -->
+            <div class="row cs_gap_y_20">
+            {% for address in addresses %}
+            <div class="col-md-6">
+                <div class="cs_address_card cs_radius_5">
+                <h3 class="cs_fs_24 cs_semibold">آدرس صورتحساب</h3>
+                <p>
+                    <span class="cs_primary_color">نام:</span> {{address.fullname}}<br>
+                    <span class="cs_primary_color">تلفن:</span> {{address.phone}}<br>
+                    <span class="cs_primary_color">ایمیل:</span> {{address.email}}<br>
+                    <span class="cs_primary_color">کشور/منطقه:</span> {{address.country}}<br>
+                    <span class="cs_primary_color">آدرس:</span> {{address.address}}<br>
+                    <span class="cs_primary_color">شهر/شهرستان:</span> {{address.city}}<br>
+                    <span class="cs_primary_color">استان:</span> {{address.province}}<br>
+                    <span class="cs_primary_color">کد پستی:</span> {{address.postal_code}}<br>
+                </p>
+                <a href="{% url 'account:delete_address' address.id %}" class="cs_btn cs_style_2 cs_medium cs_size_md">                                               
+                      <span>حذف</span>
+                </a>
+                <a href="{% url 'account:edit_address' address.id %}" class="cs_btn cs_style_2 cs_medium cs_size_md">                                               
+                      <span>ویرایش</span>
+                </a>
+                </div>
+            </div>
+            {% endfor %}
+            <div class="col-md-6">
+                <div class="cs_address_card cs_radius_5">
+                <h3 class="cs_fs_24 cs_semibold">آدرس</h3>
+                <p>شما هنوز این نوع آدرس را تنظیم نکرده اید.</p>
+                <a href="{% url 'account:add_address' %}" class="cs_btn cs_style_2 cs_medium cs_size_md">                                               
+                    <span>اضافه کردن آدرس</span>
+                </a>
+                </div>
+            </div>
+            </div>
+            <div class="cs_height_30 cs_height_lg_30"></div>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="cs_height_120 cs_height_lg_70"></div>
+{% endblock %}

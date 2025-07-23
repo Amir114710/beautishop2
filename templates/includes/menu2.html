@@ -1,0 +1,256 @@
+{% load static %}
+<!-- Start Header Section -->
+    <header class="cs_site_header cs_style_1 cs_type_1 cs_primary_color cs_sticky_header cs_white_bg rtl">
+      <div class="cs_top_header cs_primary_bg cs_accent_light_color cs_light">
+        <div class="container">
+          <div class="cs_top_header_in">
+            <div class="cs_top_header_left">
+              <ul class="cs_top_header_list cs_mp_0 cs_top_header_info_list">
+              </ul>
+            </div>
+            <div class="cs_top_header_rihgt">
+              <ul class="cs_top_header_list cs_mp_0 cs_mobile_hide">
+                <li><a href="{% url 'account:whishlist' %}">لیست آرزوها</a></li>
+                <li><a href="{% url 'account:profile' %}">حساب من</a></li>
+                <li>
+                  <div class="cs_header_social">
+                    {% for link in links %}
+                    <a href="{{link.link}}"><i style="color:{{link.color}};" class="{{link.image}}"></i></a>
+                    {% endfor %}
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_main_header">
+        <div class="container">
+          <div class="cs_main_header_in">
+            <div class="cs_main_header_left">
+              <a class="cs_site_branding" href="{% url 'home:main' %}">
+                <img src="{% static "images/logo-header.png" %}" width="120em" height="120em" alt="Logo">
+              </a>
+              <div class="cs_header_search_form_wrap">
+                <form action="{% url 'shop:search' %}" class="cs_header_search_with_category_form">
+                  <input type="text" name="q" placeholder="جستجو برای محصولات" class="cs_header_search_with_category_field">
+                  <div class="cs_header_category_wrap cs_light cs_dropdown">
+                    <button class="cs_header_category_toggle cs_dropdown_btn" type="button">
+                      <span>همه دسته ها</span>
+                      <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.00002 5C4.88377 5 4.76741 4.95927 4.67866 4.87792L0.13321 0.711272C-0.0444033 0.54846 -0.0444033 0.284816 0.13321 0.122109C0.310823 -0.0405988 0.598436 -0.0407029 0.775936 0.122109L5.00002 3.99417L9.22411 0.122109C9.40172 -0.0407029 9.68933 -0.0407029 9.86683 0.122109C10.0443 0.28492 10.0444 0.548565 9.86683 0.711272L5.32138 4.87792C5.23263 4.95927 5.11627 5 5.00002 5Z" fill="#303030"/>
+                      </svg>                                  
+                    </button>
+                    <ul class="cs_header_category_list cs_mp_0 cs_dropdown_content">
+                      {% for x in category_parent %}
+                      <li>
+                        <a href="{% url 'shop:category_parent' x.id  %}">{{x.title}}</a>
+                      </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                  <button type="submit" class="cs_header_submit_btn">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.91484 16.976C4.64396 18.712 6.95263 19.7477 9.39783 19.8844C11.843 20.0211 14.2525 19.249 16.164 17.7164L20.1056 21.6731C20.2082 21.7767 20.3303 21.8589 20.4649 21.915C20.5994 21.9711 20.7437 22 20.8895 22C21.0353 22 21.1796 21.9711 21.3141 21.915C21.4487 21.8589 21.5708 21.7767 21.6734 21.6731C21.7769 21.5703 21.859 21.4481 21.9151 21.3134C21.9711 21.1787 22 21.0343 22 20.8884C22 20.7425 21.9711 20.598 21.9151 20.4634C21.859 20.3287 21.7769 20.2064 21.6734 20.1037L17.6655 16.1471C19.0951 14.3978 19.8754 12.2069 19.8737 9.94685C19.8737 7.30878 18.8268 4.77876 16.9633 2.91336C15.0998 1.04797 12.5723 0 9.93688 0C7.30146 0 4.77399 1.04797 2.91046 2.91336C1.04694 4.77876 2.76361e-05 7.30878 2.76361e-05 9.94685C-0.00306236 11.2533 0.252996 12.5473 0.753353 13.754C1.25371 14.9606 1.98841 16.0557 2.91484 16.976ZM4.47161 4.47608C5.92841 3.01782 7.90426 2.19857 9.96448 2.19857C12.0247 2.19857 14.0006 3.01782 15.4574 4.47608C16.9142 5.93435 17.7326 7.91218 17.7326 9.97448C17.7326 12.0368 16.9142 14.0146 15.4574 15.4729C14.0079 16.9238 12.042 17.7389 9.99209 17.7389C7.94221 17.7389 5.9763 16.9238 4.52682 15.4729C3.07734 14.0219 2.26303 12.054 2.26303 10.0021C2.26303 7.95018 3.07734 5.98228 4.52682 4.53134L4.47161 4.47608Z" fill="currentColor"/>
+                    </svg>                                           
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="cs_main_header_right">
+              <button class="cs_mobile_search_toggle cs_mobile_show" type="button">
+                <img src="{% static "images/icons/search.svg" %}" alt="">   
+              </button>
+              <ul class="cs_header_list cs_mp_0">
+                <li>
+                  <div class="cs_header_credential_btns">
+                    <a href="login.html"><img src="{% static "images/icons/user.svg" %}" alt=""></a>
+                    <span>
+                      {% if request.user.is_authenticated %}
+                      <a href="{% url 'account:profile' %}">داشبورد</a>
+                      {% else %}
+                      <a href="{% url 'account:otp' %}">وارد شوید</a>
+                      {% endif %}
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <button type="button" class="cs_cart_btn">
+                    <img src="{% static "images/icons/bag.svg" %}" alt="">
+                    <span class="cs_cart_label cs_accent_bg cs_white_color"></span>
+                    <span></span>          
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_bottom_header">
+        <div class="container">
+          <div class="cs_bottom_header_in">
+            <div class="cs_bottom_header_left">
+              <div class="cs_nav_wrap">
+                <div class="cs_site_branding_wrap cs_mobile_show">
+                  <a class="cs_site_branding" href="">
+                  </a>
+                  <button class="cs_close_mobile_active">
+                    <i class="fa-regular fa-circle-xmark"></i>
+                  </button>
+                </div>
+                <div class="cs_nav_out">
+                  <div class="cs_nav_category_wrap cs_dropdown">
+                    <span class="cs_nav_category_btn cs_dropdown_btn">همه دسته ها</span>
+                    <ul class="cs_nav_category_list cs_dropdown_content">
+                      {% for x in category_parent %}
+                      <li>
+                        <a href="{% url 'shop:category_parent' x.id %}">
+                          <img src="{{x.image.url}}" alt="Product">
+                          <span>{{x.title}}</span>
+                        </a>
+                      </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                  <nav class="cs_nav cs_mobile_active">
+                    <span class="cs_mobile_tab_btn cs_mobile_show">منو</span>
+                    <ul class="cs_nav_list">
+                      <li>
+                        <a href="{% url 'home:main' %}">خانه</a>
+                      </li>
+                      <li class="menu-item-has-children cs_mega_menu">
+                        <a href="{% url 'shop:shop_main' %}">فروشگاه</a>
+                        <ul class="cs_mega_wrapper a22">
+                          {% for x in category_parent %}
+                          <li class="menu-item-has-children">
+                            <h4>{{x.title}}</h4>
+                            <ul>
+                              {% for data in x.category_parent.all %}
+                              <li><a href="{% url 'shop:category' data.id %}">{{data.title}}</a></li>
+                              {% endfor %}
+                            </ul>
+                          </li>
+                          {% endfor %}
+                          <li class="menu-item-has-children">
+                            <a href="{% url 'shop:shop_main' %}" class="cs_banner cs_style_5 cs_accent_light_bg cs_radius_10 overflow-hidden position-relative cs_bg_filed" data-src="{% static "images/offer.jpeg" %}">
+                              <div class="cs_banner_text">
+                                <p class="cs_fs_24 cs_white_color cs_medium">فروش تابستانی</p>
+                                <h2 class="cs_fs_54 cs_white_color cs_normal cs_secondary_font">20% صرفه جویی</h2>
+                                <span class="cs_banner_lavel cs_accent_strong_bg cs_white_color cs_fs_18 cs_radius_5">اکنون خرید کنید</span>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="{% url 'blog:article_list' %}">وبلاگ</a>
+                      </li>
+                      <li>
+                        <a href="{% url 'about_us:about_us_main' %}">درباره ما</a>
+                      </li>
+                      <li><a href="{% url 'contactus:contactus_main' %}">تماس بگیرید</a></li>
+                    </ul>
+                  </nav>
+                  <div class="cs_header_social cs_mobile_show">
+                   {% for link in links %}
+                    <a href="{{link.link}}"><i style="color:{{link.color}};" class="{{link.image}}"></i></a>
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="cs_cart_card_wrap">
+      <div class="cs_cart_card rtl">
+        <div class="cs_cart_card_head cs_gray_bg">
+          <h3 class="mb-0 cs_fs_18 cs_semibold">سبد خرید شما (3)</h3>
+          <button class="cs_cart_close">بستن</button>
+        </div>
+        <div class="cs_cart_card_body">
+          <div class="cs_cart_card_body_in">
+            <ul class="cs_cart_card_list cs_mp_0">
+              <li>
+                <div class="cs_cart_card_item">
+                  <div class="cs_cart_card_item_left">
+                    <img src="assets/images/product_1.png" alt="Product">
+                  </div>
+                  <div class="cs_cart_card_item_right">
+                    <h3 class="cs_fs_18 cs_medium">غبار مرطوب کننده گلاب</h3>
+                    <div class="cs_quantity cs_style_1">
+                      <button class="cs_quantity_button cs_decrement">
+                        <i class="fa-solid fa-minus"></i>                      
+                      </button>
+                      <span class="cs_quantity_input cs_primary_color cs_medium">1</span>
+                      <button class="cs_quantity_button cs_increment">
+                        <i class="fa-solid fa-plus"></i>                      
+                      </button>
+                    </div>
+                    <p class="mb-0">1 عدد<span class="cs_primary_color cs_medium"> 199تومان</span></p>
+                    <button class="cs_cart_card_item_remove" type="button"><i class="fa-regular fa-circle-xmark"></i></button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="cs_cart_card_item">
+                  <div class="cs_cart_card_item_left">
+                    <img src="assets/images/product_2.png" alt="Product">
+                  </div>
+                  <div class="cs_cart_card_item_right">
+                    <h3 class="cs_fs_18 cs_medium">ماسک سم زدایی زغال</h3>
+                    <div class="cs_quantity cs_style_1">
+                      <button class="cs_quantity_button cs_decrement">
+                        <i class="fa-solid fa-minus"></i>                      
+                      </button>
+                      <span class="cs_quantity_input cs_primary_color cs_medium">1</span>
+                      <button class="cs_quantity_button cs_increment">
+                        <i class="fa-solid fa-plus"></i>                      
+                      </button>
+                    </div>
+                    <p class="mb-0">1 عدد<span class="cs_primary_color cs_medium"> 144تومان</span></p>
+                    <button class="cs_cart_card_item_remove" type="button"><i class="fa-regular fa-circle-xmark"></i></button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="cs_cart_card_item">
+                  <div class="cs_cart_card_item_left">
+                    <img src="assets/images/product_3.png" alt="Product">
+                  </div>
+                  <div class="cs_cart_card_item_right">
+                    <h3 class="cs_fs_18 cs_medium">غبار مرطوب کننده گلاب</h3>
+                    <div class="cs_quantity cs_style_1">
+                      <button class="cs_quantity_button cs_decrement">
+                        <i class="fa-solid fa-minus"></i>                      
+                      </button>
+                      <span class="cs_quantity_input cs_primary_color cs_medium">0</span>
+                      <button class="cs_quantity_button cs_increment">
+                        <i class="fa-solid fa-plus"></i>                      
+                      </button>
+                    </div>
+                    <p class="mb-0">1 عدد<span class="cs_primary_color cs_medium"> 199تومان</span></p>
+                    <button class="cs_cart_card_item_remove" type="button"><i class="fa-regular fa-circle-xmark"></i></button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="cs_cart_card_footer">
+          <div class="cs_cart_card_subtotal">
+            <span>جمع فرعی:</span>
+            <span class="cs_primary_color cs_semibold">544تومان</span>
+          </div>
+          <a href="cart.html" class="cs_btn cs_style_2 cs_medium cs_type_1 w-100">                                               
+            <span>مشاهده سبد خرید</span>
+          </a>
+          <div class="cs_height_10 cs_height_lg_10"></div>
+          <a href="checkout.html" class="cs_btn cs_style_1 cs_medium cs_type_1 w-100">                                               
+            <span>تسویه حساب</span>
+          </a>
+        </div>
+      </div>
+      <div class="cs_cart_overlay"></div>
+    </div>

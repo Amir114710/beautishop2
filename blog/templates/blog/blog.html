@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+blog
+{% endblock %}
+{% block content %}
+<div class="cs_height_40 cs_height_lg_30"></div>
+<div class="container rtl">
+    <div class="cs_breadcamp_wrap cs_style_1 cs_accent_light_bg cs_bg_filed cs_radius_8" data-src="">
+    <div>
+        <h1 class="cs_breadcamp_title cs_fs_54 cs_semibold">دنیای زیبایی <br>و مد</h1>
+        <ol class="breadcrumb cs_fs_18 mb-0">
+        <li class="breadcrumb-item"><a href="{% url 'home:main' %}">خانه/</a></li>
+        <li class="breadcrumb-item active">وبلاگ</li>
+        </ol>
+    </div>
+    </div>
+</div>
+<!-- End Breadcamp -->
+<div class="cs_height_70 cs_height_lg_70"></div>
+<div class="container rtl">
+    <div class="row cs_gap_y_40">
+    <div class="col-lg-4">
+        <div class="cs_sidebar cs_right_sidebar cs_accent_light_bg">
+        <div class="cs_sidebar_item widget_search">
+            <form class="cs_sidebar_search" action="" method="get">
+            <input type="text" name="q" placeholder="جستجو...">
+            <button type="submit" class="cs_sidebar_search_btn">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.91484 16.976C4.64396 18.712 6.95263 19.7477 9.39783 19.8844C11.843 20.0211 14.2525 19.249 16.164 17.7164L20.1056 21.6731C20.2082 21.7767 20.3303 21.8589 20.4649 21.915C20.5994 21.9711 20.7437 22 20.8895 22C21.0353 22 21.1796 21.9711 21.3141 21.915C21.4487 21.8589 21.5708 21.7767 21.6734 21.6731C21.7769 21.5703 21.859 21.4481 21.9151 21.3134C21.9711 21.1787 22 21.0343 22 20.8884C22 20.7425 21.9711 20.598 21.9151 20.4634C21.859 20.3287 21.7769 20.2064 21.6734 20.1037L17.6655 16.1471C19.0951 14.3978 19.8754 12.2069 19.8737 9.94685C19.8737 7.30878 18.8268 4.77876 16.9633 2.91336C15.0998 1.04797 12.5723 0 9.93688 0C7.30146 0 4.77399 1.04797 2.91046 2.91336C1.04694 4.77876 2.76361e-05 7.30878 2.76361e-05 9.94685C-0.00306236 11.2533 0.252996 12.5473 0.753353 13.754C1.25371 14.9606 1.98841 16.0557 2.91484 16.976ZM4.47161 4.47608C5.92841 3.01782 7.90426 2.19857 9.96448 2.19857C12.0247 2.19857 14.0006 3.01782 15.4574 4.47608C16.9142 5.93435 17.7326 7.91218 17.7326 9.97448C17.7326 12.0368 16.9142 14.0146 15.4574 15.4729C14.0079 16.9238 12.042 17.7389 9.99209 17.7389C7.94221 17.7389 5.9763 16.9238 4.52682 15.4729C3.07734 14.0219 2.26303 12.054 2.26303 10.0021C2.26303 7.95018 3.07734 5.98228 4.52682 4.53134L4.47161 4.47608Z" fill="currentColor"/>
+                </svg>                    
+            </button>
+            </form>
+        </div>
+        <div class="cs_sidebar_item cs_widget_categories">
+            <h4 class="cs_sidebar_widget_title cs_secondary_font cs_normal cs_fs_18">دسته‌ها</h4>
+            <ul>
+            {% for x in category %}
+            <li class="cat-item">
+                <a href="{% url 'blog:category_art' x.id %}">{{x.title}}</a>
+            </li>
+            {% endfor %}
+            </ul>
+        </div>
+        <div class="cs_sidebar_item">
+            <h4 class="cs_sidebar_widget_title cs_secondary_font cs_normal cs_fs_18">پست‌های اخیر</h4>
+            <ul class="cs_recent_posts cs_mp_0">
+                {% for x in recent_articles %}
+                <li>
+                <div class="cs_recent_post">
+                <div class="cs_recent_post_info">
+                    <h3 class="cs_recent_post_title cs_fs_24 cs_medium cs_secondary_font">
+                    <a href="blog-details.html">{{x.title}}</a>
+                    </h3>
+                    <div class="cs_recent_post_date"><i class="fa-solid fa-clock"></i> {{x.created}}</div>
+                </div>
+                </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="cs_sidebar_item widget_tag_cloud">
+            <h4 class="cs_sidebar_widget_title cs_secondary_font cs_normal cs_fs_18">برچسب‌ها</h4>
+            <div class="cs_tagcloud">
+            {% for x in tags %}
+            <a href="{% url 'blog:tag_art' x.id %}" class="tag-cloud-link">{{x.title}}</a>
+            {% endfor %}
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="col-lg-8">
+        <ul class="cs_blog_list_1 cs_mp_0">
+            {% for art in articles %}
+            <li>
+            <div class="cs_post cs_style_1">
+            <div class="cs_post_category text-uppercase cs_accent_color cs_light text-center cs_accent_light_bg">{{art.category.first}}</div>
+            <div class="cs_post_thumb_wrap">
+                <a href="{% url 'blog:article_detail' art.pk %}" class="cs_post_thumb cs_bg_filed" data-src="{{art.image.url}}"></a>
+            </div>
+            <div class="cs_post_info">
+                <h2 class="cs_post_title cs_fs_24 cs_medium cs_secondary_font"><a href="{% url 'blog:article_detail' art.pk %}">{{art.title}}</a></h2>
+                <div class="cs_post_meta cs_light">
+                <span>
+                    <i class="fa-solid fa-clock"></i> {{art.created}}                   
+                </span>
+                <span>
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.75" fill-rule="evenodd" clip-rule="evenodd" d="M8.5 0C13.1867 0 17 3.81331 17 8.5C17 13.1867 13.1867 17 8.5 17C3.81331 17 0 13.1867 0 8.5C0 3.81331 3.81331 0 8.5 0ZM13.8045 12.7501C12.5571 14.3037 10.6427 15.3 8.5 15.3C6.35728 15.3 4.44275 14.3036 3.19541 12.7499C4.44275 11.1963 6.35723 10.2 8.4999 10.2C10.6426 10.2 12.5571 11.1964 13.8045 12.7501ZM8.5 8.5C9.90837 8.5 11.05 7.35832 11.05 5.95C11.05 4.54168 9.90837 3.4 8.5 3.4C7.09168 3.4 5.95 4.54168 5.95 5.95C5.95 7.35832 7.09168 8.5 8.5 8.5Z" fill="#303030"/>
+                    </svg>                       
+                    {{art.author.username}}               
+                </span>
+                </div>
+            </div>
+            </div>
+        </li>
+        {% endfor %}
+        </ul>
+        <div class="cs_height_70 cs_height_lg_40"></div>
+        <ul class="cs_pagination_box">
+        
+        {% if page_obj.has_previous %}
+        <li>
+            <a href="?page={{page_obj.previous_number}}" class="cs_pagination_arrow cs_pagination_arrow_right cs_center cs_accent_color">
+            <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.32057e-07 0.964762L4.21688e-08 19.0353C4.79022e-09 19.8904 1.03644 20.326 1.65182 19.7129L10.7206 10.6777C11.0931 10.3066 11.0931 9.69347 10.7206 9.32222L1.65182 0.286955C1.03644 -0.32599 8.69435e-07 0.109639 8.32057e-07 0.964762Z" fill="currentColor"></path>
+            </svg>              
+            </a>
+        </li>
+        {% endif %}
+        {% for i in page_obj.page_range %}
+            {% if page_obj.number == i %}
+            <li>
+                <a class="cs_pagination_item cs_center active" href="?page={{i}}{% if request.GET.q %}&q={{request.GET.q}}{% endif %}">{{i}}</a>
+            </li>
+            {% else %}
+            <li>
+                <a class="cs_pagination_item cs_center" href="?page={{i}}{% if request.GET.q %}&q={{request.GET.q}}{% endif %}">{{i}}</a>
+            </li>
+            {% endif %}
+        {% endfor %}
+        {% if page_obj.has_next %}
+        <li>
+            <a href="?page={{page_obj.next_number}}" class="cs_pagination_arrow cs_pagination_arrow_left cs_center cs_accent_color">
+            <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 0.96476L11 19.0353C11 19.8904 9.96356 20.326 9.34818 19.7129L0.279353 10.6777C-0.0931162 10.3066 -0.0931163 9.69347 0.279353 9.32222L9.34818 0.286953C9.96356 -0.325993 11 0.109636 11 0.96476Z" fill="currentColor"></path>
+            </svg>              
+            </a>
+        </li>
+        {% endif %}
+        </ul>
+    </div>
+    </div>
+</div>
+<div class="cs_height_120 cs_height_lg_70"></div>
+{% endblock %}

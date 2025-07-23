@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+ سفارش
+{% endblock %}
+{% block content %}
+<div class="container rtl">
+    <div class="cs_height_45 cs_height_lg_45"></div>
+    <ol class="breadcrumb cs_fs_18 mb-0">
+    <li class="breadcrumb-item"><a href="{% url 'home:main' %}">خانه/</a></li>
+    <li class="breadcrumb-item"><a href="{% url 'account:profile' %}">حساب من/</a></li>
+    <li class="breadcrumb-item active">سفارشات</li>
+    </ol>
+    <div class="cs_height_30 cs_height_lg_30"></div>
+</div>
+<div class="container rtl">
+    <div class="cs_account_wrap">
+   <div class="cs_account_nav cs_radius_10">
+          <div class="cs_account_avatar">
+            <img src="{{ request.user.image.url }}" alt="">
+            <h3 class=""><span>سلام,</span> <br>{{request.user.Full_name}}</h3>
+          </div>
+          <ul class="cs_account_nav_list cs_mp_0">
+            <li class="{% if request.resolver_match.url_name == 'profile'%}active{% endif %}">
+              <a href="{% url 'account:profile' %}"><span>داشبورد</span></a>
+            </li>
+            <li class="{% if request.resolver_match.url_name == 'orderlist'%}active{% endif %}">
+              <a href="{% url 'account:orderlist' %}"><span>سفارشات</span></a>
+            </li>
+            <li class="{% if request.resolver_match.url_name == 'address'%}active{% endif %}">
+              <a href="{% url 'account:address' %}"><span>آدرس</span></a>
+            </li>
+            <li class="{% if request.resolver_match.url_name == 'edit_profile'%}active{% endif %}">
+              <a href="{% url 'account:edit_profile' %}"><span>جزئیات حساب</span></a>
+            </li>
+            <li class="{% if request.resolver_match.url_name == 'whishlist'%}active{% endif %}">
+              <a href="{% url 'account:whishlist' %}"><span> علاقه مندی ها</span></a>
+            </li>
+            {% if request.user.is_admin == True %}
+            <li class="{% if request.resolver_match.url_name == 'admin_order'%}active{% endif %}">
+              <a href="{% url 'account:admin_order' %}"><span> لیست سفارشات</span></a>
+            </li>
+            {% endif %}
+            <li>
+              <a href="{% url 'account:logout' %}"><span>خروج از سیستم</span></a>
+            </li>
+          </ul>
+        </div>
+    <div class="cs_account_content">
+        <div class="cs_account_card cs_radius_10">
+        </div>
+        <div class="cs_plr_25">
+            <div class="table-responsive">
+            <table class="cs_table_1 m-0">
+                <thead>
+                <tr>
+                    <th>سفارش</th>
+                    <th>روشن قرار داده شده</th>
+                    <th>وضعیت</th>
+                    <th>مجموع</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for x in request.user.orders.all %}
+                    <tr>
+                      <td><a href="{% url 'account:orderdetail' x.id %}">#{{x.id}}</a></td>
+                      <td>{{x.created_at}}</td>
+                      {% if x.status %}
+                      <td class="cs_accent_color">تایید</td>
+                      {% else %}
+                      <td class="cs_accent_color">در انتظار</td>
+                      {% endif %}
+                      <td>{{x.total_price}} تومان</td>
+                      <td class="text-end">
+                        <a class="cs_text_btn" href="{% url 'account:orderdetail' x.pk %}">
+                          <span>مشاهده جزئیات</span>
+                        </a>
+                      </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="cs_height_120 cs_height_lg_70"></div>
+{% endblock %}

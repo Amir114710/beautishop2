@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+Otp_Registerations
+{% endblock %}
+{% block content %}
+<div class="cs_height_40 cs_height_lg_30"></div>
+<div class="container rtl">
+    <div class="cs_breadcamp_wrap cs_style_1 cs_accent_light_bg cs_bg_filed cs_radius_8" data-src="{% static "images/login_banner.jpg" %}">
+    <div>
+        <h1 class="cs_breadcamp_title cs_fs_54 cs_semibold">ورود عضو</h1>
+        <p class="mb-0 cs_fs_18">برای ادامه سفر زیبایی خود به حساب LILICHKA خود دسترسی پیدا کنید.</p>
+    </div>
+    </div>
+</div>
+<!-- End Breadcamp -->
+<div class="cs_height_80 cs_height_lg_80"></div>
+<div class="container rtl">
+    <div class="cs_login_card cs_gray_bg_4 cs_radius_10">
+    <div class="row align-items-center cs_gap_y_40">
+        <div class="col-xxl-5 col-xl-6 col-lg-7">
+        <img src="{% static "images/login_img.jpeg" %}" alt="">
+        </div>
+        <div class="col-lg-5 offset-xl-1">
+        <h2 class="cs_fs_36 cs_medium">به LILICHKA خوش آمدید!</h2>
+        <p class="cs_light mb-0">لطفاً شماره تلفن همراه خود را وارد کنید</p>
+        <div class="cs_height_30 cs_height_lg_20"></div>
+        <form method="post" action="">
+            {% csrf_token %}
+            {% for error in form.errors.phone %}
+                <p class="alert alert-danger">{{error}}</p>
+            {% endfor %}
+            <label class="cs_semibold"> شماره تلفن  <span>*</span></label>
+            {{form.phone}}
+            <div class="cs_height_20 cs_height_lg_20"></div>
+            <button type="submit" class="cs_btn cs_style_1 cs_fs_18 cs_medium w-100">ورود به سیستم</button>
+        </form>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="cs_height_150 cs_height_lg_80"></div>
+{% endblock %}

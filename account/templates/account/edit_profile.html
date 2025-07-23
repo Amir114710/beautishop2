@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+ویرایش
+{% endblock %}
+{% block content %}
+    <div class="container rtl">
+      <div class="cs_height_45 cs_height_lg_45"></div>
+      <ol class="breadcrumb cs_fs_18 mb-0">
+        <li class="breadcrumb-item"><a href="{% url 'home:main' %}">خانه/</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'account:profile' %}">حساب من/</a></li>
+        <li class="breadcrumb-item active"> جزئیات</li>
+      </ol>
+      <div class="cs_height_30 cs_height_lg_30"></div>
+    </div>
+    <div class="container rtl">
+    <div class="container rtl">
+      <div class="cs_account_wrap">
+        <div class="cs_account_nav cs_radius_10">
+          <div class="cs_account_avatar">
+            <img src="{{ request.user.image.url }}" alt="">
+            <h3 class=""><span>سلام,</span> <br>{{request.user.Full_name}}</h3>
+          </div>
+          <ul class="cs_account_nav_list cs_mp_0">
+            <li class="{% if request.resolver_match.url_name == 'profile'%}active{% endif %}">
+              <a href="{% url 'account:profile' %}"><span>داشبورد</span></a>
+            </li>
+            <li class="{% if request.resolver_match.url_name == 'orderlist'%}active{% endif %}">
+              <a href="{% url 'account:orderlist' %}"><span>سفارشات</span></a>
+            </li>
+            <li class="{% if request.resolver_match.url_name == 'address'%}active{% endif %}">
+              <a href="{% url 'account:address' %}"><span>آدرس</span></a>
+            </li>
+            <li class="{% if request.resolver_match.url_name == 'edit_profile'%}active{% endif %}">
+              <a href="{% url 'account:edit_profile' %}"><span>جزئیات حساب</span></a>
+            </li>
+            <li class="{% if request.resolver_match.url_name == 'whishlist'%}active{% endif %}">
+              <a href="{% url 'account:whishlist' %}"><span> علاقه مندی ها</span></a>
+            </li>
+            {% if request.user.is_admin == True %}
+            <li class="{% if request.resolver_match.url_name == 'admin_order'%}active{% endif %}">
+              <a href="{% url 'account:admin_order' %}"><span> لیست سفارشات</span></a>
+            </li>
+            {% endif %}
+            <li>
+              <a href="{% url 'account:logout' %}"><span>خروج از سیستم</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="cs_account_content">
+          <div class="cs_account_card cs_radius_10">
+            <div class="cs_account_card_head cs_type_1">
+              <h3 class="cs_fs_18 mb-0">جزئیات حساب</h3>
+            </div>
+            <div class="cs_plr_25">
+              <hr>
+              <div class="cs_height_25 cs_height_lg_25"></div>
+              <form method="post" action="" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="row cs_gap_y_20">
+                <div class="col-lg-6">
+                  <label class="cs_medium">نام <span>*</span></label>
+                  {{form.Full_name}}
+                </div>
+                <div class="col-lg-6">
+                  <label class="cs_medium">نام مستعار <span>*</span></label>
+                  {{form.username}}
+                </div>
+                <div class="col-lg-6">
+                  <label class="cs_medium">ایمیل <span>*</span></label>
+                  {{form.email}}
+                </div>
+                <div class="col-lg-12">
+                  <label class="cs_medium">تصویر کوچک</label>
+                  {{form.image}}
+                </div>
+              </div>
+              <div class="cs_height_30 cs_height_lg_30"></div>
+              <div>
+                <button type="submit" class="cs_btn cs_style_1 cs_type_1"><span>ذخیره تغییرات</span></button>
+              </div>
+              <div class="cs_height_30 cs_height_lg_30"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cs_height_120 cs_height_lg_70"></div>
+{% endblock %}

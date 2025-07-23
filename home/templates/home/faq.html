@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+سوالات متداول
+{% endblock %}
+{% block content %}
+<div class="cs_height_40 cs_height_lg_30"></div>
+<div class="container rtl">
+    <div class="cs_breadcamp_wrap cs_style_1 cs_accent_light_bg cs_bg_filed cs_radius_8" data-src="{% static "images/breadcamp_bg_8.jpg" %}">
+    <div>
+        <h1 class="cs_breadcamp_title cs_fs_54 cs_semibold">سوالات متداول</h1>
+        <ol class="breadcrumb cs_fs_18 mb-0">
+        <li class="breadcrumb-item"><a href="{% url 'home:main' %}">خانه/</a></li>
+        <li class="breadcrumb-item active">سوالات متداول</li>
+        </ol>
+    </div>
+    </div>
+</div>
+<!-- End Breadcamp -->
+<!-- Start FAQ Section -->
+<section>
+    <div class="cs_height_120 cs_height_lg_70"></div>
+    <div class="container rtl">
+    <div class="row">
+        <div class="col-lg-5">
+        <div class="cs_section_heading cs_style_1">
+            <div class="cs_section_heading_in">
+            <h3 class="cs_section_heading_title cs_fs_54 cs_semibold mb-0 d-flex align-items-center">سوالات عمومی <br>پاسخ ها!</h3>
+            </div>
+        </div>
+        <div class="cs_height_60 cs_height_lg_50"></div>
+        </div>
+        <div class="col-lg-7">
+        <hr>
+        <div class="cs_accordians cs_style_1 cs_light cs_type_1">
+            {% for x in questions %}
+            <div class="cs_accordian active">
+                <div class="cs_accordian_head">
+                    <h3 class="cs_accordian_title cs_primary_color cs_fs_24 fw-medium mb-0">{{x.question}}</h3>
+                    <span class="cs_accordian_toggle"></span>
+                </div>
+                <div class="cs_accordian_body">
+                    <p class="cs_secondary_color cs_font_26 fw-light mb-0">{{x.answer}}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <hr>
+        </div>
+    </div>
+    <div class="cs_height_120 cs_height_lg_70"></div>
+    </div>
+    <div class="cs_height_120 cs_height_lg_70"></div>
+</section>
+{% endblock %}

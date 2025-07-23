@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+بررسی
+{% endblock %}
+{% block content %}
+<div class="cs_height_40 cs_height_lg_30"></div>
+<div class="container rtl">
+    <div class="cs_breadcamp_wrap cs_style_1 cs_accent_light_bg cs_bg_filed cs_radius_8" data-src="{% static "images/breadcamp_bg_11.jpg" %}">
+    <div>
+        <h1 class="cs_breadcamp_title cs_fs_54 cs_semibold">سفارش زیبایی خود را تکمیل کنید</h1>
+        <ol class="breadcrumb cs_fs_18 mb-0">
+        <li class="breadcrumb-item"><a href="{% url 'home:main' %}">خانه/</a></li>
+        <li class="breadcrumb-item active">سبد خرید</li>
+        </ol>
+    </div>
+    </div>
+</div>
+<!-- End Breadcamp -->
+<div class="cs_height_120 cs_height_lg_70"></div>
+<div class="container rtl">
+    <div class="row cs_gap_y_40">
+    <div class="col-lg-7">
+        <h2 class="cs_fs_36 cs_secondary_font cs_medium mb-0">جزئیات صورتحساب</h2>
+        <div class="cs_height_16 cs_height_lg_16"></div>
+        <p class="cs_light cs_primary_color mb-0">لطفاً جزئیات صورتحساب خود را وارد کنید:</p>
+        <div class="cs_height_35 cs_height_lg_30"></div>
+        <div class="row">
+        <form action="{% url 'cart:apply_address' order.id %}" method="post">
+            {% csrf_token %}
+            <div class="col-lg-6">
+            <label class="cs_semibold">ادرس ها<span>*</span></label>
+            {% if request.user.addresses.all %}
+            <select name="address" class="cs_form_field form-select">
+            {% for x in request.user.addresses.all %}
+            <option>{{x.address}}</option>
+            {% endfor %}
+            </select>
+            <br>
+            {% else %}
+            <a href="{% url 'account:add_address' %}?next={% url 'cart:order_detail' order.id %}" class="cs_btn cs_style_1 cs_fs_18 cs_coupon_btn cs_medium"><span>ادرس جدید</span></a>
+            {% endif %}
+            <div class="cs_height_30 cs_height_lg_20"></div>
+            <a  href="{% url 'account:add_address' %}?next={% url 'cart:order_detail' order.id %}" class="cs_btn cs_style_1 cs_fs_18 cs_coupon_btn cs_medium"><span> اضافه کردن ادرس</span></a>
+            <div class="cs_height_30 cs_height_lg_20"></div>
+            {% if request.user.addresses.all %}
+            <button class="cs_btn cs_style_1 cs_fs_18 cs_coupon_btn cs_medium" type="submit"><span>رفتن به درگاه</span></button>
+            {% endif %}
+            <div class="cs_height_30 cs_height_lg_20"></div>
+        </div>
+        </form>
+        </div>
+        <div class="cs_height_60 cs_height_lg_20"></div>
+    </div>
+    <div class="col-xxl-4 col-lg-5 offset-xxl-1">
+        <form method="post" action="{% url 'cart:apply_discount' order.id %}" class="cs_order_card cs_accent_light_bg cs_radius_10">
+            {% csrf_token %}
+            <h3 class="cs_order_card_title cs_fs_24 cs_medium cs_secondary_font">سفارش شما</h3>
+            <h4 class="cs_coupon_title cs_semibold cs_fs_16 cs_secondary_font">کد تبلیغاتی دارید؟</h4>
+            <p class="cs_coupon_subtitle cs_light">برای صرفه جویی بیشتر، آن را در اینجا وارد کنید.</p>
+            <div class="cs_coupon_form">
+              <input type="text" name="discount_code" class="cs_coupon_input cs_light" placeholder="کد کوپن را وارد کنید">
+              <button class="cs_btn cs_style_1 cs_fs_18 cs_coupon_btn cs_medium" type="submit"><span>دریافت</span></button>
+            </div>
+        </form>
+        <div class="cs_order_card cs_accent_light_bg cs_radius_10">
+        <h3 class="cs_fs_24 cs_medium cs_secondary_font mb-0">خلاصه سفارش</h3>
+        <div class="cs_height_8 cs_height_lg_8"></div>
+        <ul class="cs_mp_0 cs_order_summary">
+            {% for x in order.items.all %}
+            <li>
+            <div class="cs_order_summary_list_title">
+                <h3 class="mb-0 cs_secondary_font cs_semibold cs_fs_16">{{x.product.title}}</h3>
+                <h3 class="mb-0 cs_secondary_font cs_semibold cs_fs_16 cs_accent_color">{{x.product.price}} تومان</h3>
+            </div>
+            <p>اندازه: <span class="cs_primary_color">{{x.product.value}} </span></p>
+            <p>تعداد: {{x.quantity}}</p>
+            <p>رنگ: {{x.color}}</p>
+            <p>هزینه پست: {{x.post_price}}</p>
+            </li>
+            {% endfor %}
+        </ul>
+        <div class="cs_height_40 cs_height_lg_30"></div>
+        <ul class="cs_card_price_list cs_type_1 cs_mp_0">
+            <li class="cs_total_price">
+            {{text}}
+            <span class="cs_fs_18 cs_primary_color">مجموع</span>
+            <span class="cs_fs_18 cs_primary_color">{{order.total_price}} تومان</span>
+            </li>
+        </ul>
+        <div class="cs_height_40 cs_height_lg_30"></div>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="cs_height_120 cs_height_lg_70"></div>
+{% endblock %}

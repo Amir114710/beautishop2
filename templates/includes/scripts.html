@@ -1,0 +1,12 @@
+{% load static %}
+<script src="{% static "js/jquery-3.6.0.min.js" %}"></script>
+<script src="{% static "js/jquery.slick.min.js" %}"></script>
+<script src="{% static "js/select2.min.js" %}"></script>
+<script src="{% static "js/main.js" %}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+<script>
+    function downloadSection() {
+    const element = document.getElementById('download-area1');
+    html2pdf().from(element).save('download.pdf');
+}
+</script>

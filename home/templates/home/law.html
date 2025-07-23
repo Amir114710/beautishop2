@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+قوانین
+{% endblock %}
+{% block content %}
+<!-- Start Error Section -->
+<div class="cs_height_100 cs_height_lg_70"></div>
+<div class="container">
+  {% for x in laws %}
+  <div class="cs_error text-right">
+    <h1>قوانین و مقررات</h1>
+    <p class="cs_fs_54">{{x.content|safe}}</p>
+  </div>
+  {% endfor %}
+</div>
+<div class="cs_height_100 cs_height_lg_70"></div>
+<!-- End Error Section -->
+{% endblock %}
