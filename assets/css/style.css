@@ -64,9 +64,9 @@ body,
 html {
   color: var(--secondary);
   font-family: var(--secondary-font);
-  font-size: 500px!important;
+  font-size: 15px!important;
   line-height: 2em;
-  font-weight: 0;
+  font-weight: 1000;
   overflow-x: clip;
   text-align: right!important;
   font-size: 15px!important;
@@ -83,8 +83,9 @@ h6 {
   padding: 0;
   margin: 0 0 0px 0;
   font-weight: 0;
-  line-height: 2em;
+  line-height: 5em;
   font-family: var(--primary-font);
+  font-size: 15px!important;
 }
 
 .cs_primary_font {
@@ -96,31 +97,31 @@ h6 {
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 25px!important;
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 25px!important;
 }
 
 h3 {
-  font-size: 17px;
+  font-size: 25px!important;
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 25px!important;
 }
 
 h5 {
-  font-size: 15px;
+  font-size: 25px!important;
 }
 
 h6 {
-  font-size: 15px;
+  font-size: 25px!important;
 }
 
 p {
-  margin-bottom: 15px;
+  font-size: 15px!important;
 }
 
 ul {
