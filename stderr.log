@@ -668,3 +668,426 @@ Not Found: /assets/images/product_1.png
 Not Found: /assets/images/product_2.png
 Not Found: /assets/images/product_3.png
 Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Invalid HTTP_HOST header: 'lilichkala.ir'. You may need to add 'lilichkala.ir' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'lilichkala.ir'. You may need to add 'lilichkala.ir' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'lilichkala.ir'. You may need to add 'lilichkala.ir' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'lilichkala.ir'. You may need to add 'lilichkala.ir' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'lilichkala.ir'. You may need to add 'lilichkala.ir' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'lilichkala.ir'. You may need to add 'lilichkala.ir' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'lilichkala.ir'. You may need to add 'lilichkala.ir' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'lilichkala.ir'. You may need to add 'lilichkala.ir' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'lilichkala.ir'. You may need to add 'lilichkala.ir' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'lilichkala.ir'. You may need to add 'lilichkala.ir' to ALLOWED_HOSTS.
+Not Found: /static/fonts/IRANSansWeb.eot
+Not Found: /media/home/images/logo-header.png
+Not Found: /media/home/banner/logo-header.png
+Not Found: /media/blog/image/Picsart_25-07-23_15-57-43-319.jpg
+Not Found: /media/blog/image/Picsart_25-07-23_15-46-20-940.jpg
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /media/home/images/Picsart_25-07-23_15-54-02-453.jpg
+Not Found: /media/home/images/Picsart_25-07-23_16-06-03-290.jpg
+Not Found: /static/fonts/IRANSansWeb.eot
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_2.png
+Not Found: /static/fonts/IRANSansWeb.eot
+Not Found: /assets/images/product_1.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /static/fonts/IRANSansWeb.eot
+Not Found: /assets/images/product_3.png
+Not Found: /static/fonts/IRANSansWeb.eot
+Not Found: /assets/images/product_1.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /blog/blog_detail/assets/images/product_1.png
+Not Found: /media/blog/video/Video_230113180406_wv4g0mr.mp4
+Not Found: /blog/blog_detail/assets/images/product_3.png
+Not Found: /blog/blog_detail/assets/images/product_2.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_2.png
+[UID:1336][1308971] Child process with pid: 1311875 was killed by signal: 15, core dumped: no
+Not Found: /favicon.ico
+Not Found: /assets/images/product_1.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /account/assets/images/product_1.png
+Not Found: /account/assets/images/product_2.png
+Not Found: /account/assets/images/product_3.png
+Not Found: /static/images/login_banner.jpg
+Not Found: /account/assets/images/product_2.png
+Not Found: /account/assets/images/product_1.png
+Not Found: /account/assets/images/product_3.png
+Not Found: /static/images/login_banner.jpg
+Not Found: /static/images/login_banner.jpg
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /login.html
+Not Found: /favicon.ico
+Not Found: /login.html
+Not Found: /login.html
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_2.png
+Not Found: /static/css/style.css.map
+Not Found: /static/css/bootstrap.min.css.map
+Not Found: /login.html
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /media/home/video/Video_230113180406.mp4
+[UID:1336][1318678] Child process with pid: 1318687 was killed by signal: 15, core dumped: no
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /login.html
+Not Found: /favicon.ico
+Not Found: /login.html
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /account/assets/images/product_1.png
+Not Found: /account/assets/images/product_2.png
+Not Found: /account/assets/images/product_3.png
+Not Found: /static/images/login_banner.jpg
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_3.png
+Not Found: /account/assets/images/product_1.png
+Not Found: /account/assets/images/product_2.png
+Not Found: /account/assets/images/product_3.png
+Not Found: /static/images/login_banner.jpg
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /account/assets/images/product_1.png
+Not Found: /account/assets/images/product_2.png
+Not Found: /account/assets/images/product_3.png
+Not Found: /static/images/login_banner.jpg
+Not Found: /account/assets/images/product_1.png
+Not Found: /account/assets/images/product_2.png
+Not Found: /account/assets/images/product_3.png
+[UID:1336][1354994] Child process with pid: 1354999 was killed by signal: 15, core dumped: no
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /account/assets/images/product_1.png
+Not Found: /account/assets/images/product_3.png
+Not Found: /account/assets/images/product_2.png
+Not Found: /static/images/login_banner.jpg
+Not Found: /account/assets/images/product_1.png
+Not Found: /account/assets/images/product_2.png
+Not Found: /account/assets/images/product_3.png
+Not Found: /static/images/login_banner.jpg
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_2.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /account/assets/images/product_1.png
+Not Found: /account/assets/images/product_2.png
+Not Found: /account/assets/images/product_3.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_1.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_2.png
+Not Found: /static/images/login_banner.jpg
+Not Found: /account/assets/images/product_1.png
+Not Found: /account/assets/images/product_2.png
+Not Found: /account/assets/images/product_3.png
+Not Found: /static/images/login_banner.jpg
+Not Found: /static/css/style.css.map
+Not Found: /static/css/bootstrap.min.css.map
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /account/assets/images/product_2.png
+Not Found: /account/assets/images/product_1.png
+Not Found: /account/assets/images/product_3.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /blog/assets/images/product_1.png
+Not Found: /blog/assets/images/product_2.png
+Not Found: /blog/assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /.well-known/security.txt
+Not Found: /favicon.ico
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_3.png
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /.well-known/security.txt
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /static/fonts/B-NAZANIN.eot
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /static/css/home/lilichka/public_html/static/fonts/B-NAZANIN.eot
+Not Found: /static/css/home/lilichka/public_html/static/fonts/B-NAZANIN.ttf
+Not Found: /static/css/home/lilichka/public_html/static/fonts/B-NAZANIN.svg
+Not Found: /static/css/home/lilichka/public_html/static/fonts/B-NAZANIN.woff
+Not Found: /static/css/home/lilichka/public_html/static/fonts/B-NAZANIN.woff2
+Not Found: /static/css/home/lilichka/public_html/static/fonts/B-NAZANIN.eot
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /static/css/home/lilichka/public_html/static/fonts/B-NAZANIN.ttf
+Not Found: /static/css/home/lilichka/public_html/static/fonts/B-NAZANIN.svg
+Not Found: /static/css/home/lilichka/public_html/static/fonts/B-NAZANIN.woff
+Not Found: /static/css/home/lilichka/public_html/static/fonts/B-NAZANIN.woff2
+Not Found: /assets/images/product_2.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /contactus/assets/images/product_2.png
+Not Found: /contactus/assets/images/product_1.png
+Not Found: /contactus/assets/images/product_3.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
