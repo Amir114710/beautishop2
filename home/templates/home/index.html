@@ -6,9 +6,8 @@ Home
 {% block content %}
 <!-- Start Hero Section -->
 {% for x in posters %}
-<div class="cs_hero cs_style_2 cs_bg_filed">
+<div class="cs_hero cs_style_2 cs_bg_filed" data-src="{{x.image.url}}">
     <div class="container rtl">
-        <img src="{{x.image.url}}" width="250" height="250" alt="">
     <div class="cs_hero_text">
         <h1 class="cs_hero_title cs_fs_100">{{x.title}}</h1>
         <p class="cs_hero_subtitle cs_fs_24">{{x.content|safe}}</p>
