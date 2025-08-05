@@ -90,7 +90,7 @@ class CustomerClub(models.Model):
     created = models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return self.phone
+        return f'{self.phone}'
     
     class Meta:
         ordering = ('-created',)
