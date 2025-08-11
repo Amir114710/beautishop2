@@ -5,16 +5,22 @@ Home
 {% endblock %}
 {% block content %}
 <!-- Start Hero Section -->
-{% for x in posters %}
-<div class="cs_hero cs_style_2 cs_bg_filed" data-src="{{x.image.url}}">
-    <div class="container rtl">
-    <div class="cs_hero_text">
-        <h1 class="cs_hero_title cs_fs_100">{{x.title}}</h1>
-        <p class="cs_hero_subtitle cs_fs_24">{{x.content|safe}}</p>
-        <a href="{% url 'shop:shop_main' %}" class="cs_btn cs_style_1 cs_fs_18 cs_medium">اکنون خرید کنید</a>
+<div class="swiper header-slider">
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
+        {% for x in posters %}
+        <div class="swiper-slide">
+            <img src="{{x.image.url}}" width="100%" height="100%" loading="lazy" alt="Slide 1">
+            <div class="slide-content">
+                <h2>{{x.title}}</h2>
+                <p>{{x.content|safe}}</p>
+                <a href="{{x.link}}" class="slide-btn">مشاهده محصولات</a>
+            </div>
+        </div>
+        {% endfor %}
     </div>
-    </div>
-{% endfor %}
 </div>
 <!-- End Hero Section -->
 <div class="cs_height_80 cs_height_lg_60"></div>

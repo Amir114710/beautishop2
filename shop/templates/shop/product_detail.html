@@ -40,20 +40,24 @@
         <p class="cs_light mb-0">{{product.little_content|safe}}</p>
         <div class="cs_height_30 cs_height_lg_30"></div>
         <ul class="cs_details_list_2 cs_mp_0 cs_light">
-            <li><span class="cs_semibold cs_primary_color">اندازه:</span> {{product.value}} میلی لیتر</li>
+            <li><span class="cs_semibold cs_primary_color">اندازه:</span> {{product.value}}</li>
+        </ul>
+        <ul class="cs_details_list_2 cs_mp_0 cs_light">
+            <li><span class="cs_semibold cs_primary_color">موجودی:</span> {{product.inventory_view}}</li>
         </ul>
         <div class="cs_height_40 cs_height_lg_40"></div>
 
         <div class="cs_height_40 cs_height_lg_40"></div>
         <form method="post" action="{% url 'cart:cart_add' product.slug %}">
             {% csrf_token %}
+            {{error}}
             <div class="cs_quantity_wrap">
-            <div class="cs_light">مقدار</div>
+            <div class="cs_light">تعداد</div>
             <div>
             <div class="cs_quantity cs_style_1">
                 <button class="cs_quantity_button cs_decrement">                          
                 </button>
-                <input type="number" name="quantity" class="cs_quantity_input cs_primary_color cs_medium" style="background-color: none!important;border: none!important;width: 1em;" value="">
+                <input type="number" name="quantity" class="cs_quantity_input cs_primary_color cs_medium" style="background-color: none!important;border: none!important;width: 1em;" value="" required="True">
                 <button class="cs_quantity_button cs_increment">                        
                 </button>
             </div>
@@ -63,15 +67,18 @@
             <div class="cs_light">رنگ ها</div>
             <div>
             <div class="cs_quantity cs_style_1">
-                <select name="color" class="cs_quantity_input cs_primary_color cs_medium">
+                <select name="color" class="cs_quantity_input cs_primary_color cs_medium" required="True">
                     <option>_____</option>
                     {% for x in product.color.all %}
-                    <option value="{{x.color}}">{{x.color}}</option>
+                    {% if x.quantity > 0 %}
+                    <option value="{{x.title}}">{{x.color}}</option>
+                    {% endif %}
                     {% endfor %}
                 </select>
             </div>
             </div>
         </div>
+        <input type="hidden" name="wieght" value="{{product.wieght}}" id="">
         <div class="cs_height_40 cs_height_lg_40"></div>
         <div class="cs_btn_group_1">
             <button type="submit" class="cs_btn cs_style_2 cs_fs_18 cs_medium" type="submit">
@@ -112,46 +119,69 @@
     <div class="col-lg-6">
         <div class="cs_single_product_slider_1 cs_type_1">
         <div class="cs_single_product_thumb">
+            {% if product.image1.url is not None %}
             <div class="cs_single_product_thumb_item cs_product_zoom">
             <img src="{{product.image1.url}}" alt="Thumb">
             </div>
+            {% endif %}
+            {% if product.image2.url is not None %}
             <div class="cs_single_product_thumb_item cs_product_zoom">
             <img src="{{product.image2.url}}" alt="Thumb">
             </div>
+            {% endif %}
+            {% if product.image3.url is not None  %}
             <div class="cs_single_product_thumb_item cs_product_zoom">
             <img src="{{product.image3.url}}" alt="Thumb">
             </div>
+            {% endif %}
+            {% if product.image4.url is not None %}
             <div class="cs_single_product_thumb_item cs_product_zoom">
             <img src="{{product.image4.url}}" alt="Thumb">
             </div>
+            {% endif %}
+            {% if product.image5.url is not None %}
             <div class="cs_single_product_thumb_item cs_product_zoom">
             <img src="{{product.image5.url}}" alt="Thumb">
             </div>
+            {% endif %}
+            {% if product.image6.url is not None %}
             <div class="cs_single_product_thumb_item cs_product_zoom">
             <img src="{{product.image6.url}}" alt="Thumb">
             </div>
+            {% endif %}
         </div>
-        <div class="cs_height_30 cs_height_lg_30"></div>
         <div class="position-relative">
             <div class="cs_single_product_nav">
-            <div class="cs_single_product_thumb_mini">
-                <img src="{{product.image1.url}}" alt="Thumb">
-            </div>
-            <div class="cs_single_product_thumb_mini">
+                {% if product.image1.url is not None %}
+                <div class="cs_single_product_thumb_mini">
+                    <img src="{{product.image1.url}}" alt="Thumb">
+                </div>
+                {% endif %}
+                {% if product.image2.url is not None %}
+                <div class="cs_single_product_thumb_mini">
                 <img src="{{product.image2.url}}" alt="Thumb">
-            </div>
-            <div class="cs_single_product_thumb_mini">
+                </div>
+                {% endif %}
+                {% if product.image3.url is not None %}
+                <div class="cs_single_product_thumb_mini">
                 <img src="{{product.image3.url}}" alt="Thumb">
-            </div>
-            <div class="cs_single_product_thumb_mini">
+                </div>
+                {% endif %}
+                {% if product.image4.url is not None %}
+                <div class="cs_single_product_thumb_mini">
                 <img src="{{product.image4.url}}" alt="Thumb">
-            </div>
-            <div class="cs_single_product_thumb_mini">
+                </div>
+                {% endif %}
+                {% if product.image5.url is not None %}
+                <div class="cs_single_product_thumb_mini">
                 <img src="{{product.image5.url}}" alt="Thumb">
-            </div>
-            <div class="cs_single_product_thumb_mini">
+                </div>
+                {% endif %}
+                {% if product.image6.url is not None  %}
+                <div class="cs_single_product_thumb_mini">
                 <img src="{{product.image6.url}}" alt="Thumb">
-            </div>
+                </div>
+                {% endif %}
             </div>
             <div class="cs_single_left_arrow">
             <svg width="17" height="32" viewBox="0 0 17 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -166,13 +196,10 @@
         </div>
         </div>
         <div class="cs_share_links_wrap rtl">
-        <div class="cs_height_25 cs_height_lg_25"></div>
         <p class="cs_light cs_primary_color">اشتراک گذاری</p>
         <div class="cs_share_links">
-            {% post_to_twitter product.get_absolute_url  'twitter'%}
-            {% post_to_facebook product.get_absolute_url 'facebook'%}
-            {% post_to_whatsapp product.get_absolute_url 'whats_app'%}
-            {% post_to_linkedin product.get_absolute_url 'linkdin'%}
+            {% post_to_facebook product.get_absolute_url '<i class="fa fa-facebook"></i>'%}
+            {% post_to_whatsapp product.get_absolute_url '<i class="fa fa-whatsapp"></i>'%}
         </div>
         </div>
     </div>

@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-k1^y@hrow^qa(y_3w1gl(8%9**5f6qmt(+7n*4m=@a-uabz^fv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.lilichkala.ir' , 'lilichkala.ir']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -137,8 +137,8 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [path.join(BASE_DIR, 'assets')] 
 MEDIA_URL = 'media/'
-MEDIA_ROOT = '/home/lilichka/public_html/media'
-STATIC_ROOT = '/home/lilichka/public_html/static'
+MEDIA_ROOT = path.join(BASE_DIR, 'media')
+STATIC_ROOT = path.join(BASE_DIR, 'static')
 CKEDITOR_UPLOAD_PATH = 'uploadFiles'
 
 
