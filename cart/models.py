@@ -27,6 +27,7 @@ class OrderItem(models.Model):
     product = models.ForeignKey(Product , on_delete=models.CASCADE , related_name='items' , verbose_name='کالا')
     quantity = models.SmallIntegerField(verbose_name='تعداد')
     color = models.CharField(max_length=550 , verbose_name='رنگ' , null=True , blank=True)
+    value = models.CharField(max_length=550 , verbose_name='حجم' , null=True , blank=True)
     price = models.PositiveIntegerField(verbose_name='قیمت')
     post_price = models.BigIntegerField(default=0 , verbose_name='هزینه پست' , null=True , blank=True)
 

@@ -3,7 +3,7 @@ from django.views.generic import View , TemplateView
 from django.urls import reverse
 from account.models import Address
 from cart.cart_module import Cart
-from shop.models import  Product
+from shop.models import  Color, Product
 from .cart_module import Cart
 from .models import DiscountCode, Order, OrderItem
 from mixins import AddressRequirdMixins, LoginRequirdMixins , LogoutRequirdMixins
@@ -29,12 +29,12 @@ class CartAddView(View):
         product = get_object_or_404(Product , slug = slug)
         quantity = request.POST.get('quantity')
         color = request.POST.get('color')
+        value = request.POST.get('value')
+        wieght = request.POST.get('wieght')
         cart = Cart(request)
-        if int(quantity) > 0:
-            cart.add(product , quantity , color)
-        else:
-            pass
-        return redirect(reverse('cart:cart_main_list'))
+        if int(quantity) > 0 and color is not None and value is not None:
+            cart.add(product , quantity , color , wieght , value)
+            return redirect(reverse('cart:cart_main_list'))
     
 class CartDeleteView(View):
     def get(self , request , id):
@@ -52,7 +52,7 @@ class OrderCreationView(AddressRequirdMixins , View):
         cart = Cart(request)
         order = Order.objects.create(user = request.user , total_price = cart.total() , post_price = cart.post_price())
         for item in cart:
-            OrderItem.objects.create(order=order , product = item['product'] , quantity = item['quantity'] , color = item['color'] , price = item['price'] , post_price = item['post_price'])
+            OrderItem.objects.create(order=order , product = item['product'] , quantity = item['quantity'] , color = item['color'] , value = item['value'] , price = item['price'] , post_price = item['post_price'])
         cart.remove_cart()
         return redirect('cart:order_detail' , order.id)
     
@@ -80,6 +80,17 @@ class ApplyAddress(AddressRequirdMixins , View):
                 order.addresses = x
         for x in order.items.all():
             x.product.sale_count += 1
+            x.product.inventory -= 1
+            if x.product.inventory <= 0:
+                x.product.statuc = False
+            for a in x.product.color.all() :
+                if a.title == x.color:
+                    a.quantity -= 1
+                    a.save()
+            for y in x.product.value_product.all() :
+                if y.title == x.value:
+                    y.quantity -= 1
+                    y.save()
             x.product.save()
         order.save()
         return redirect('pay:main_pay' , order.id)

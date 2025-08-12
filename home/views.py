@@ -9,7 +9,7 @@ class HomeView(TemplateView):
     template_name = 'home/index.html'
     def get_context_data(self, **kwargs):
         context =  super().get_context_data(**kwargs)
-        context['posters'] = Poster.objects.all()[:1]
+        context['posters'] = Poster.objects.all()
         context['brands'] = Brand.objects.all()
         context['little_posters'] = LittlePoster.objects.all()[:2]
         context['attrs'] = ShopAttr.objects.all()

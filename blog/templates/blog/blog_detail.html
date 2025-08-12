@@ -99,10 +99,8 @@ blog_detail
             {% endfor %}
         </div>
         <div class="cs_social_share">
-            {% post_to_twitter article.get_absolute_url  'twitter'%}
-            {% post_to_facebook article.get_absolute_url 'facebook'%}
-            {% post_to_whatsapp article.get_absolute_url 'whats_app'%}
-            {% post_to_linkedin article.get_absolute_url 'linkdin'%}
+            {% post_to_facebook product.get_absolute_url '<i class="fa fa-facebook"></i>'%}
+            {% post_to_whatsapp product.get_absolute_url '<i class="fa fa-whatsapp"></i>'%}
         </div>
         </div>
         <div id="comments" class="comments-area">
