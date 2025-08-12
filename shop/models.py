@@ -44,6 +44,20 @@ class Color(models.Model):
         verbose_name_plural = 'رنگ ها'
         verbose_name = 'رنگ'
 
+class Value(models.Model):
+    title = models.CharField(max_length=550 , verbose_name='نام اصلی' , null=True , blank=True)
+    value = models.CharField(max_length=550 , verbose_name='حجم')
+    quantity = models.IntegerField(default=0 , verbose_name='تعداد')
+    created = models.DateField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title
+    
+    class Meta:
+        ordering = ('-created',)
+        verbose_name_plural = 'حجم ها'
+        verbose_name = 'حجم'
+
 class Product(models.Model):
     title = models.CharField(max_length=1500 , verbose_name='نام کالا')
     english_title = models.CharField(max_length=1500 , verbose_name='نام انگلیسی کالا')
@@ -51,6 +65,7 @@ class Product(models.Model):
     category = models.ManyToManyField(Category , related_name='category_product' , verbose_name='دسته بندی')
     category_parent = models.ForeignKey(CategoryParent , on_delete=models.CASCADE , related_name='parent_product' , verbose_name='سر دسته' , null=True , blank=True)
     color = models.ManyToManyField(Color , related_name='product_color' , verbose_name='رنگ ها' , null=True , blank=True)
+    value_product = models.ManyToManyField(Value , related_name='product_value' , verbose_name='حجم ها' , null=True , blank=True)
     price = models.BigIntegerField(default=0 , verbose_name='قیمت کالا به تومان')
     post_price = models.BigIntegerField(default=0 , verbose_name='قیمت پست کالا به تومان' , null=True , blank=True)
     discount_percent = models.BigIntegerField(default=0 , null=True , blank=True , verbose_name='درصد تخفیف')

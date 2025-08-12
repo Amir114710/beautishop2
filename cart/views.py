@@ -29,10 +29,11 @@ class CartAddView(View):
         product = get_object_or_404(Product , slug = slug)
         quantity = request.POST.get('quantity')
         color = request.POST.get('color')
+        value = request.POST.get('value')
         wieght = request.POST.get('wieght')
         cart = Cart(request)
-        if int(quantity) > 0 and color is not None:
-            cart.add(product , quantity , color , wieght)
+        if int(quantity) > 0 and color is not None and value is not None:
+            cart.add(product , quantity , color , wieght , value)
             return redirect(reverse('cart:cart_main_list'))
     
 class CartDeleteView(View):
@@ -51,7 +52,7 @@ class OrderCreationView(AddressRequirdMixins , View):
         cart = Cart(request)
         order = Order.objects.create(user = request.user , total_price = cart.total() , post_price = cart.post_price())
         for item in cart:
-            OrderItem.objects.create(order=order , product = item['product'] , quantity = item['quantity'] , color = item['color'] , price = item['price'] , post_price = item['post_price'])
+            OrderItem.objects.create(order=order , product = item['product'] , quantity = item['quantity'] , color = item['color'] , value = item['value'] , price = item['price'] , post_price = item['post_price'])
         cart.remove_cart()
         return redirect('cart:order_detail' , order.id)
     
@@ -86,6 +87,10 @@ class ApplyAddress(AddressRequirdMixins , View):
                 if a.title == x.color:
                     a.quantity -= 1
                     a.save()
+            for y in x.product.value_product.all() :
+                if y.title == x.value:
+                    y.quantity -= 1
+                    y.save()
             x.product.save()
         order.save()
         return redirect('pay:main_pay' , order.id)

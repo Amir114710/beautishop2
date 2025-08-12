@@ -78,6 +78,21 @@
             </div>
             </div>
         </div>
+        <div class="cs_quantity_wrap">
+            <div class="cs_light">حجم ها</div>
+            <div>
+            <div class="cs_quantity cs_style_1">
+                <select name="value" class="cs_quantity_input cs_primary_color cs_medium" required="True">
+                    <option>_____</option>
+                    {% for x in product.value_product.all %}
+                    {% if x.quantity > 0 %}
+                    <option value="{{x.title}}">{{x.value}}</option>
+                    {% endif %}
+                    {% endfor %}
+                </select>
+            </div>
+            </div>
+        </div>
         <input type="hidden" name="wieght" value="{{product.wieght}}" id="">
         <div class="cs_height_40 cs_height_lg_40"></div>
         <div class="cs_btn_group_1">
