@@ -3215,3 +3215,1192 @@ Traceback (most recent call last):
   File "/home/lilichka/beautipro/shop/models.py", line 87, in save
     new = self.price * self.discount_percent/100
 TypeError: unsupported operand type(s) for *: 'int' and 'NoneType'
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /favicon.ico
+Internal Server Error: /admin/shop/product/add/
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1886, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1227, in save_model
+    obj.save()
+  File "/home/lilichka/beautipro/shop/models.py", line 90, in save
+    super(Product , self).save()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1821, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1745, in as_sql
+    value_rows = [
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1746, in <listcomp>
+    [
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1747, in <listcomp>
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1695, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 317, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 93, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/base.py", line 49, in save
+    name = self._save(name, content)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/filesystem.py", line 101, in _save
+    file_move_safe(content.temporary_file_path(), full_path)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/move.py", line 43, in file_move_safe
+    if _samefile(old_file_name, new_file_name):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/move.py", line 20, in _samefile
+    return os.path.samefile(src, dst)
+  File "/opt/alt/python39/lib64/python3.9/genericpath.py", line 101, in samefile
+    s2 = os.stat(f2)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 45-47: ordinal not in range(128)
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/shop/images/IMG_4083.jpeg
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Internal Server Error: /admin/shop/product/add/
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1886, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1227, in save_model
+    obj.save()
+  File "/home/lilichka/beautipro/shop/models.py", line 90, in save
+    super(Product , self).save()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1821, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1745, in as_sql
+    value_rows = [
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1746, in <listcomp>
+    [
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1747, in <listcomp>
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1695, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 317, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 93, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/base.py", line 49, in save
+    name = self._save(name, content)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/filesystem.py", line 101, in _save
+    file_move_safe(content.temporary_file_path(), full_path)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/move.py", line 43, in file_move_safe
+    if _samefile(old_file_name, new_file_name):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/move.py", line 20, in _samefile
+    return os.path.samefile(src, dst)
+  File "/opt/alt/python39/lib64/python3.9/genericpath.py", line 101, in samefile
+    s2 = os.stat(f2)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 45-47: ordinal not in range(128)
+Internal Server Error: /admin/shop/product/add/
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1886, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1227, in save_model
+    obj.save()
+  File "/home/lilichka/beautipro/shop/models.py", line 90, in save
+    super(Product , self).save()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1821, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1745, in as_sql
+    value_rows = [
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1746, in <listcomp>
+    [
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1747, in <listcomp>
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1695, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 317, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 93, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/base.py", line 49, in save
+    name = self._save(name, content)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/filesystem.py", line 101, in _save
+    file_move_safe(content.temporary_file_path(), full_path)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/move.py", line 43, in file_move_safe
+    if _samefile(old_file_name, new_file_name):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/move.py", line 20, in _samefile
+    return os.path.samefile(src, dst)
+  File "/opt/alt/python39/lib64/python3.9/genericpath.py", line 101, in samefile
+    s2 = os.stat(f2)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 45-47: ordinal not in range(128)
+Internal Server Error: /admin/shop/product/add/
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1886, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1227, in save_model
+    obj.save()
+  File "/home/lilichka/beautipro/shop/models.py", line 90, in save
+    super(Product , self).save()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1821, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1745, in as_sql
+    value_rows = [
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1746, in <listcomp>
+    [
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1747, in <listcomp>
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1695, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 317, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 93, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/base.py", line 49, in save
+    name = self._save(name, content)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/filesystem.py", line 101, in _save
+    file_move_safe(content.temporary_file_path(), full_path)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/move.py", line 43, in file_move_safe
+    if _samefile(old_file_name, new_file_name):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/move.py", line 20, in _samefile
+    return os.path.samefile(src, dst)
+  File "/opt/alt/python39/lib64/python3.9/genericpath.py", line 101, in samefile
+    s2 = os.stat(f2)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 45-47: ordinal not in range(128)
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon-precomposed.png
+Internal Server Error: /admin/shop/product/add/
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1886, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1227, in save_model
+    obj.save()
+  File "/home/lilichka/beautipro/shop/models.py", line 90, in save
+    super(Product , self).save()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1821, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1745, in as_sql
+    value_rows = [
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1746, in <listcomp>
+    [
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1747, in <listcomp>
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1695, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 317, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 93, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/base.py", line 49, in save
+    name = self._save(name, content)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/filesystem.py", line 101, in _save
+    file_move_safe(content.temporary_file_path(), full_path)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/move.py", line 43, in file_move_safe
+    if _samefile(old_file_name, new_file_name):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/move.py", line 20, in _samefile
+    return os.path.samefile(src, dst)
+  File "/opt/alt/python39/lib64/python3.9/genericpath.py", line 101, in samefile
+    s2 = os.stat(f2)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 45-47: ordinal not in range(128)
+Not Found: /favicon.ico
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /favicon.ico
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/category/assets/images/product_1.png
+Not Found: /shop/category/assets/images/product_2.png
+Not Found: /shop/category/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /favicon.ico
+Not Found: /wiki
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /.well-known/security.txt
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /sitemap.xml
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /security.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /sitemap.xml
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_3.png
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /sitemap.xml
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /login
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_2.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /assets/images/product_1.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /ggggg
+Not Found: /fffff
+Not Found: /cart.html
+Not Found: /checkout.html
+Internal Server Error: /shop/detail/violet-makeup-waterproof-eyebrow-pencil-with-brush
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/shop/views.py", line 22, in get
+    product = get_object_or_404(Product , slug=slug)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+shop.models.Product.MultipleObjectsReturned: get() returned more than one Product -- it returned 2!
+Not Found: /robots.txt
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /ggggg
+Not Found: /fffff
+Not Found: /cart.html
+Not Found: /checkout.html
+Internal Server Error: /shop/detail/violet-makeup-waterproof-eyebrow-pencil-with-brush
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/shop/views.py", line 22, in get
+    product = get_object_or_404(Product , slug=slug)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+shop.models.Product.MultipleObjectsReturned: get() returned more than one Product -- it returned 2!
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Internal Server Error: /shop/detail/violet-makeup-waterproof-eyebrow-pencil-with-brush
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/shop/views.py", line 22, in get
+    product = get_object_or_404(Product , slug=slug)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+shop.models.Product.MultipleObjectsReturned: get() returned more than one Product -- it returned 2!
+Not Found: /apple-touch-icon-precomposed.png
+Not Found: /apple-touch-icon.png
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'mail.lilichkala.ir'. You may need to add 'mail.lilichkala.ir' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.lilichkala.ir'. You may need to add 'mail.lilichkala.ir' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.lilichkala.ir'. You may need to add 'mail.lilichkala.ir' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.lilichkala.ir'. You may need to add 'mail.lilichkala.ir' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.lilichkala.ir'. You may need to add 'mail.lilichkala.ir' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.lilichkala.ir'. You may need to add 'mail.lilichkala.ir' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.lilichkala.ir'. You may need to add 'mail.lilichkala.ir' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.lilichkala.ir'. You may need to add 'mail.lilichkala.ir' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.lilichkala.ir'. You may need to add 'mail.lilichkala.ir' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.lilichkala.ir'. You may need to add 'mail.lilichkala.ir' to ALLOWED_HOSTS.
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /shop/category/assets/images/product_1.png
+Not Found: /shop/category/assets/images/product_3.png
+Not Found: /shop/category/assets/images/product_2.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_3.png
+Internal Server Error: /admin/shop/product/5/change/
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1227, in save_model
+    obj.save()
+  File "/home/lilichka/beautipro/shop/models.py", line 90, in save
+    super(Product , self).save()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 981, in _save_table
+    values = [
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 985, in <listcomp>
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 317, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 93, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/base.py", line 49, in save
+    name = self._save(name, content)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/filesystem.py", line 106, in _save
+    fd = os.open(full_path, self.OS_OPEN_FLAGS, 0o666)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 45-47: ordinal not in range(128)
+Not Found: /favicon.ico
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+[UID:1336][2899885] Child process with pid: 882481 was killed by signal: 15, core dumped: no
+Not Found: /shop/category/assets/images/product_1.png
+Not Found: /shop/category/assets/images/product_3.png
+Not Found: /shop/category/assets/images/product_2.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/category/assets/images/product_2.png
+Not Found: /shop/category/assets/images/product_1.png
+Not Found: /shop/category/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/category/assets/images/product_3.png
+Not Found: /shop/category/assets/images/product_1.png
+Not Found: /shop/category/assets/images/product_2.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/category/assets/images/product_1.png
+Not Found: /shop/category/assets/images/product_2.png
+Not Found: /shop/category/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_3.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/category/assets/images/product_1.png
+Not Found: /shop/category/assets/images/product_2.png
+Not Found: /shop/category/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/category/assets/images/product_2.png
+Not Found: /shop/category/assets/images/product_1.png
+Not Found: /shop/category/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/category/assets/images/product_2.png
+Not Found: /shop/category/assets/images/product_1.png
+Not Found: /shop/category/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/category/assets/images/product_2.png
+Not Found: /shop/category/assets/images/product_1.png
+Not Found: /shop/category/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/category/assets/images/product_1.png
+Not Found: /shop/category/assets/images/product_2.png
+Not Found: /shop/category/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/category/assets/images/product_1.png
+Not Found: /shop/category/assets/images/product_2.png
+Not Found: /shop/category/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/category/assets/images/product_1.png
+Not Found: /shop/category/assets/images/product_2.png
+Not Found: /shop/category/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/category/assets/images/product_1.png
+Not Found: /shop/category/assets/images/product_2.png
+Not Found: /shop/category/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/category/assets/images/product_2.png
+Not Found: /shop/category/assets/images/product_3.png
+Not Found: /shop/category/assets/images/product_1.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/category/assets/images/product_1.png
+Not Found: /shop/category/assets/images/product_3.png
+Not Found: /shop/category/assets/images/product_2.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/category/assets/images/product_1.png
+Not Found: /shop/category/assets/images/product_3.png
+Not Found: /shop/category/assets/images/product_2.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/category/assets/images/product_1.png
+Not Found: /shop/category/assets/images/product_2.png
+Not Found: /shop/category/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/category/assets/images/product_1.png
+Not Found: /shop/category/assets/images/product_2.png
+Not Found: /shop/category/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/category/assets/images/product_1.png
+Not Found: /shop/category/assets/images/product_3.png
+Not Found: /shop/category/assets/images/product_2.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/category/assets/images/product_1.png
+Not Found: /shop/category/assets/images/product_3.png
+Not Found: /shop/category/assets/images/product_2.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/category/assets/images/product_2.png
+Not Found: /shop/category/assets/images/product_1.png
+Not Found: /shop/category/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+[UID:1336][2899885] Child process with pid: 2137989 was killed by signal: 15, core dumped: no
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'mail.lilichkala.ir'. You may need to add 'mail.lilichkala.ir' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.lilichkala.ir'. You may need to add 'mail.lilichkala.ir' to ALLOWED_HOSTS.
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /media/blog/video/Video_230113180406_wv4g0mr.mp4
+Not Found: /ggggg
+Internal Server Error: /shop/detail/violet-makeup-waterproof-eyebrow-pencil-with-brush
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/shop/views.py", line 22, in get
+    product = get_object_or_404(Product , slug=slug)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+shop.models.Product.MultipleObjectsReturned: get() returned more than one Product -- it returned 2!
+Not Found: /fffff
+Not Found: /cart.html
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /media/blog/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Internal Server Error: /shop/detail/violet-makeup-waterproof-eyebrow-pencil-with-brush
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/shop/views.py", line 22, in get
+    product = get_object_or_404(Product , slug=slug)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+shop.models.Product.MultipleObjectsReturned: get() returned more than one Product -- it returned 2!
+Not Found: /favicon.ico
+Internal Server Error: /shop/detail/violet-makeup-waterproof-eyebrow-pencil-with-brush
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/shop/views.py", line 22, in get
+    product = get_object_or_404(Product , slug=slug)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+shop.models.Product.MultipleObjectsReturned: get() returned more than one Product -- it returned 2!
+Internal Server Error: /shop/detail/violet-makeup-waterproof-eyebrow-pencil-with-brush
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/shop/views.py", line 22, in get
+    product = get_object_or_404(Product , slug=slug)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+shop.models.Product.MultipleObjectsReturned: get() returned more than one Product -- it returned 2!
+Internal Server Error: /shop/detail/violet-makeup-waterproof-eyebrow-pencil-with-brush
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/shop/views.py", line 22, in get
+    product = get_object_or_404(Product , slug=slug)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+shop.models.Product.MultipleObjectsReturned: get() returned more than one Product -- it returned 2!
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_1.png
+Internal Server Error: /cart/add/gabrini-brow-fixing-gel-soap-effect
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/cart/views.py", line 33, in post
+    if int(quantity) > 0:
+ValueError: invalid literal for int() with base 10: ''
+Internal Server Error: /cart/add/gabrini-brow-fixing-gel-soap-effect
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/cart/views.py", line 33, in post
+    if int(quantity) > 0:
+ValueError: invalid literal for int() with base 10: ''
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_3.png
+Internal Server Error: /cart/add/art-skin-vol-fix-brown-mascara
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/cart/views.py", line 33, in post
+    if int(quantity) > 0:
+ValueError: invalid literal for int() with base 10: ''
+Internal Server Error: /cart/add/art-skin-vol-fix-brown-mascara
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/cart/views.py", line 33, in post
+    if int(quantity) > 0:
+ValueError: invalid literal for int() with base 10: ''
+Method Not Allowed (GET): /cart/add/art-skin-vol-fix-brown-mascara
+Method Not Allowed (GET): /cart/add/art-skin-vol-fix-brown-mascara
+Method Not Allowed (GET): /cart/add/art-skin-vol-fix-brown-mascara
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_3.png
+Internal Server Error: /cart/add/art-skin-vol-fix-brown-mascara
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/cart/views.py", line 33, in post
+    if int(quantity) > 0:
+ValueError: invalid literal for int() with base 10: ''
+Internal Server Error: /cart/add/art-skin-vol-fix-brown-mascara
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/cart/views.py", line 33, in post
+    if int(quantity) > 0:
+ValueError: invalid literal for int() with base 10: ''
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /cart/assets/images/product_2.png
+Not Found: /cart/assets/images/product_1.png
+Not Found: /cart/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_10.jpg
+Not Found: /account/assets/images/product_1.png
+Not Found: /account/assets/images/product_2.png
+Not Found: /account/assets/images/product_3.png
+Not Found: /static/images/login_banner.jpg
+Not Found: /shop/category_parent/assets/images/product_1.png
+Not Found: /shop/category_parent/assets/images/product_2.png
+Not Found: /shop/category_parent/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/category_parent/assets/images/product_1.png
+Not Found: /shop/category_parent/assets/images/product_2.png
+Not Found: /shop/category_parent/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/category_parent/assets/images/product_2.png
+Not Found: /shop/category_parent/assets/images/product_1.png
+Not Found: /shop/category_parent/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/category_parent/assets/images/product_1.png
+Not Found: /shop/category_parent/assets/images/product_2.png
+Not Found: /shop/category_parent/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/category_parent/assets/images/product_1.png
+Not Found: /shop/category_parent/assets/images/product_2.png
+Not Found: /shop/category_parent/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_3.png
+Internal Server Error: /cart/add/wokali-natural-collagen
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/cart/views.py", line 33, in post
+    if int(quantity) > 0:
+ValueError: invalid literal for int() with base 10: ''
+Not Found: /favicon.ico
+Not Found: /cart/assets/images/product_1.png
+Not Found: /cart/assets/images/product_3.png
+Not Found: /cart/assets/images/product_2.png
+Not Found: /static/images/breadcamp_bg_10.jpg
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_2.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /favicon.ico
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /fffff
+Not Found: /favicon.ico
+Not Found: /fffff
+Not Found: /fffff
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
