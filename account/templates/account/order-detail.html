@@ -64,6 +64,8 @@
                 <span class="cs_medium">قیمت</span>
                 <span class="cs_medium">تعداد</span>
                 <span class="cs_medium">رنگ</span>
+                <span class="cs_medium">حجم</span>
+                <span class="cs_medium">سایز</span>
                 <span class="cs_medium">وضعیت</span>
             </li>
             {% for x in order.items.all %}
@@ -73,6 +75,8 @@
                 <span class="cs_light">{{x.product.price}}تومان</span>
                 <span class="cs_light">{{x.quantity}}</span>
                 <span class="cs_light">{{x.color}}</span>
+                <span class="cs_light">{{x.value}}</span>
+                <span class="cs_light">{{x.size}}</span>
                 {% if order.is_pay %}
                 <span class="cs_light">پرداخت شده</span>
                 {% else %}

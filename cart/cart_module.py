@@ -25,7 +25,7 @@ class Cart:
         del self.session[CART_SESSION_ID]
         self.save()
 
-    def add(self, product, quantity , color , wieght , value):
+    def add(self, product, quantity , color , wieght , value , size):
         product_id = str(product.id)
         wieght_total = int(wieght) * int(quantity)
         if wieght_total <= 1000 :
@@ -33,7 +33,7 @@ class Cart:
         elif wieght_total > 1000:
             post_total = 78000
         if product_id not in self.cart or color != self.cart[product_id]['color'] or value != self.cart[product_id]['value'] :
-            self.cart[product_id] = {'quantity': 0 , 'price': str(product.price) , 'post_price':post_total , 'wieght':wieght , 'color':color , 'value':value , 'id' : product.id}
+            self.cart[product_id] = {'quantity': 0 , 'price': str(product.price) , 'post_price':post_total , 'wieght':wieght , 'color':color , 'value':value , 'size':size , 'id' : product.id}
         self.cart[product_id]['quantity'] += int(quantity)
         self.save()
 

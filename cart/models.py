@@ -28,6 +28,7 @@ class OrderItem(models.Model):
     quantity = models.SmallIntegerField(verbose_name='تعداد')
     color = models.CharField(max_length=550 , verbose_name='رنگ' , null=True , blank=True)
     value = models.CharField(max_length=550 , verbose_name='حجم' , null=True , blank=True)
+    size = models.CharField(max_length=550 , verbose_name='سایز' , null=True , blank=True)
     price = models.PositiveIntegerField(verbose_name='قیمت')
     post_price = models.BigIntegerField(default=0 , verbose_name='هزینه پست' , null=True , blank=True)
 

@@ -68,7 +68,6 @@
             <div>
             <div class="cs_quantity cs_style_1">
                 <select name="color" class="cs_quantity_input cs_primary_color cs_medium" required="True">
-                    <option>_____</option>
                     {% for x in product.color.all %}
                     {% if x.quantity > 0 %}
                     <option value="{{x.title}}">{{x.color}}</option>
@@ -83,10 +82,23 @@
             <div>
             <div class="cs_quantity cs_style_1">
                 <select name="value" class="cs_quantity_input cs_primary_color cs_medium" required="True">
-                    <option>_____</option>
                     {% for x in product.value_product.all %}
                     {% if x.quantity > 0 %}
                     <option value="{{x.title}}">{{x.value}}</option>
+                    {% endif %}
+                    {% endfor %}
+                </select>
+            </div>
+            </div>
+        </div>
+        <div class="cs_quantity_wrap">
+            <div class="cs_light">سایز ها</div>
+            <div>
+            <div class="cs_quantity cs_style_1">
+                <select name="size" class="cs_quantity_input cs_primary_color cs_medium" required="True">
+                    {% for x in product.size.all %}
+                    {% if x.quantity > 0 %}
+                    <option value="{{x.title}}">{{x.size}}</option>
                     {% endif %}
                     {% endfor %}
                 </select>
