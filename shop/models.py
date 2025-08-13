@@ -51,7 +51,7 @@ class Value(models.Model):
     created = models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return self.title
+        return self.value
     
     class Meta:
         ordering = ('-created',)
