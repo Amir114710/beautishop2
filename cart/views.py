@@ -35,7 +35,8 @@ class CartAddView(View):
         cart = Cart(request)
         if int(quantity) > 0 and color is not None and value is not None and size is not None:
             cart.add(product , quantity , color , wieght , value , size)
-            return redirect(reverse('cart:cart_main_list'))
+            next = reverse('cart:cart_main_list')
+            return redirect(reverse('account:otp') + f'?next={next}')
     
 class CartDeleteView(View):
     def get(self , request , id):

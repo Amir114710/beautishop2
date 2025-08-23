@@ -169,3 +169,8 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = '97888az@gmail.com'
 EMAIL_HOST_PASSWORD = 'aoty ggxd gqph kksm'
+
+import sys
+sys.getfilesystemencoding()  # باید utf-8 برگردونه
+
+DEFAULT_CHARSET = 'utf-8'
