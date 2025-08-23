@@ -49,6 +49,7 @@ class OTP(models.Model):
     token = models.CharField(max_length=12 , null=True)
     phone = models.CharField(max_length=12)
     code = models.SmallIntegerField(null=True, blank=True)
+    next_page = models.TextField(blank=True , null=True)
     expiration_date =  models.DateTimeField(null=True, blank=True , auto_now_add=True)
 
     def __str__(self):

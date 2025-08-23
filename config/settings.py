@@ -173,4 +173,8 @@ EMAIL_HOST_PASSWORD = 'aoty ggxd gqph kksm'
 import sys
 sys.getfilesystemencoding()  # باید utf-8 برگردونه
 
+<<<<<<< HEAD
 DEFAULT_CHARSET = 'utf-8'
+=======
+DEFAULT_CHARSET = 'utf-8'
+>>>>>>> 6e29f5cfd1d9173a09105c6bd3ed6ba58296928e
