@@ -67,11 +67,12 @@
             <div class="cs_light">رنگ ها</div>
             <div>
             <div class="cs_quantity cs_style_1">
-                <select name="color" class="cs_quantity_input cs_primary_color cs_medium" required="True">
-                    <option>_____</option>
+                <select name="color" class="cs_quantity_input cs_primary_color cs_medium" required>
                     {% for x in product.color.all %}
                     {% if x.quantity > 0 %}
                     <option value="{{x.title}}">{{x.color}}</option>
+                    {% else %}
+                    <option value="{{x.title}}" disabled>{{x.color}}-نا موجود</option>
                     {% endif %}
                     {% endfor %}
                 </select>
@@ -82,11 +83,28 @@
             <div class="cs_light">حجم ها</div>
             <div>
             <div class="cs_quantity cs_style_1">
-                <select name="value" class="cs_quantity_input cs_primary_color cs_medium" required="True">
-                    <option>_____</option>
+                <select name="value" class="cs_quantity_input cs_primary_color cs_medium" required>
                     {% for x in product.value_product.all %}
                     {% if x.quantity > 0 %}
                     <option value="{{x.title}}">{{x.value}}</option>
+                    {% else %}
+                    <option value="{{x.title}}" disabled>{{x.value}}-نا موجود</option>
+                    {% endif %}
+                    {% endfor %}
+                </select>
+            </div>
+            </div>
+        </div>
+        <div class="cs_quantity_wrap">
+            <div class="cs_light">سایز ها</div>
+            <div>
+            <div class="cs_quantity cs_style_1">
+                <select name="size" class="cs_quantity_input cs_primary_color cs_medium" required>
+                    {% for x in product.size.all %}
+                    {% if x.quantity > 0 %}
+                    <option value="{{x.title}}">{{x.size}}</option>
+                    {% else %}
+                    <option value="{{x.title}}" disabled>{{x.size}}-نا موجود</option>
                     {% endif %}
                     {% endfor %}
                 </select>

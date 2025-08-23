@@ -4856,3 +4856,2027 @@ Not Found: /shop/detail/assets/images/product_3.png
 Not Found: /shop/detail/assets/images/product_1.png
 Not Found: /shop/detail/assets/images/product_2.png
 Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_3.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Internal Server Error: /shop/detail/art-skin-vol-fix-brown-mascara
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: shop_size
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/shop/views.py", line 36, in get
+    return render(request , self.template_name , {'product':product , 'products':products , 'is_liked':is_liked})
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 380, in __len__
+    self._fetch_all()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: shop_size
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /shop/assets/images/product_3.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Internal Server Error: /shop/detail/art-skin-vol-fix-brown-mascara
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: shop_size
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/shop/views.py", line 36, in get
+    return render(request , self.template_name , {'product':product , 'products':products , 'is_liked':is_liked})
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 380, in __len__
+    self._fetch_all()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: shop_size
+Internal Server Error: /shop/detail/art-skin-vol-fix-brown-mascara
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: shop_size
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/shop/views.py", line 36, in get
+    return render(request , self.template_name , {'product':product , 'products':products , 'is_liked':is_liked})
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 380, in __len__
+    self._fetch_all()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: shop_size
+Not Found: /robots.txt
+Not Found: /assets/images/product_1.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /payment/index.php
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_1.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_2.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_1.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /apple-touch-icon.png
+Not Found: /favicon.ico
+Not Found: /apple-touch-icon-precomposed.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /favicon.ico
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /account/assets/images/product_1.png
+Not Found: /account/assets/images/product_2.png
+Not Found: /account/assets/images/product_3.png
+Not Found: /account/assets/images/product_1.png
+Not Found: /account/assets/images/product_2.png
+Not Found: /account/assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Internal Server Error: /shop/detail/violet-makeup-waterproof-eyebrow-pencil-with-brush
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/shop/views.py", line 26, in get
+    product = get_object_or_404(Product , slug=slug)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+shop.models.Product.MultipleObjectsReturned: get() returned more than one Product -- it returned 2!
+Not Found: /js/lkk_ch.js
+Not Found: /js/twint_ch.js
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /shop/detail/assets/images/product_2.png
+Internal Server Error: /cart/list
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader_tags.py", line 208, in render
+    return template.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 177, in render
+    return self._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 914, in _resolve_lookup
+    current = current()
+  File "/home/lilichka/beautipro/cart/cart_module.py", line 43, in total
+    wieght_total = int(item['wieght']) * int(item['quantity'])
+KeyError: 'wieght'
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_1.png
+Internal Server Error: /cart/list
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader_tags.py", line 208, in render
+    return template.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 177, in render
+    return self._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 914, in _resolve_lookup
+    current = current()
+  File "/home/lilichka/beautipro/cart/cart_module.py", line 43, in total
+    wieght_total = int(item['wieght']) * int(item['quantity'])
+KeyError: 'wieght'
+Not Found: /favicon.ico
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /account/assets/images/product_1.png
+Not Found: /account/assets/images/product_2.png
+Not Found: /account/assets/images/product_3.png
+Internal Server Error: /admin/shop/product/add/
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1886, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1227, in save_model
+    obj.save()
+  File "/home/lilichka/beautipro/shop/models.py", line 124, in save
+    super(Product , self).save()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1821, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1745, in as_sql
+    value_rows = [
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1746, in <listcomp>
+    [
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1747, in <listcomp>
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1695, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 317, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 93, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/base.py", line 49, in save
+    name = self._save(name, content)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/filesystem.py", line 106, in _save
+    fd = os.open(full_path, self.OS_OPEN_FLAGS, 0o666)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 45-51: ordinal not in range(128)
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_3.png
+Internal Server Error: /cart/list
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader_tags.py", line 208, in render
+    return template.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 177, in render
+    return self._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 914, in _resolve_lookup
+    current = current()
+  File "/home/lilichka/beautipro/cart/cart_module.py", line 43, in total
+    wieght_total = int(item['wieght']) * int(item['quantity'])
+KeyError: 'wieght'
+Not Found: /favicon.ico
+Internal Server Error: /cart/list
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader_tags.py", line 208, in render
+    return template.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 177, in render
+    return self._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 914, in _resolve_lookup
+    current = current()
+  File "/home/lilichka/beautipro/cart/cart_module.py", line 43, in total
+    wieght_total = int(item['wieght']) * int(item['quantity'])
+KeyError: 'wieght'
+Internal Server Error: /cart/list
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader_tags.py", line 208, in render
+    return template.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 177, in render
+    return self._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 914, in _resolve_lookup
+    current = current()
+  File "/home/lilichka/beautipro/cart/cart_module.py", line 43, in total
+    wieght_total = int(item['wieght']) * int(item['quantity'])
+KeyError: 'wieght'
+Internal Server Error: /cart/list
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader_tags.py", line 208, in render
+    return template.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 177, in render
+    return self._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 914, in _resolve_lookup
+    current = current()
+  File "/home/lilichka/beautipro/cart/cart_module.py", line 43, in total
+    wieght_total = int(item['wieght']) * int(item['quantity'])
+KeyError: 'wieght'
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_2.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Internal Server Error: /cart/list
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader_tags.py", line 208, in render
+    return template.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 177, in render
+    return self._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 914, in _resolve_lookup
+    current = current()
+  File "/home/lilichka/beautipro/cart/cart_module.py", line 43, in total
+    wieght_total = int(item['wieght']) * int(item['quantity'])
+KeyError: 'wieght'
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_3.png
+Internal Server Error: /cart/add/art-skin-vol-fix-brown-mascara
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view cart.views.view didn't return an HttpResponse object. It returned None instead.
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_3.png
+Internal Server Error: /cart/list
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader_tags.py", line 208, in render
+    return template.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 177, in render
+    return self._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 914, in _resolve_lookup
+    current = current()
+  File "/home/lilichka/beautipro/cart/cart_module.py", line 49, in total
+    return total
+UnboundLocalError: local variable 'total' referenced before assignment
+Internal Server Error: /shop/detail/violet-makeup-waterproof-eyebrow-pencil-with-brush
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/shop/views.py", line 26, in get
+    product = get_object_or_404(Product , slug=slug)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+shop.models.Product.MultipleObjectsReturned: get() returned more than one Product -- it returned 2!
+Internal Server Error: /cunstomer
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 2053, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/home/views.py", line 31, in post
+    CustomerClub.objects.create(phone=phone)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1821, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1745, in as_sql
+    value_rows = [
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1746, in <listcomp>
+    [
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1747, in <listcomp>
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1686, in prepare_value
+    return field.get_db_prep_save(value, connection=self.connection)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 954, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 2060, in get_db_prep_value
+    value = super().get_db_prep_value(value, connection, prepared)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 947, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 2055, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'phone' expected a number but got ''.
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_1.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_3.png
+Not Found: /account/assets/images/product_1.png
+Not Found: /account/assets/images/product_2.png
+Not Found: /account/assets/images/product_3.png
+Not Found: /static/images/login_banner.jpg
+Internal Server Error: /cart/list
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader_tags.py", line 208, in render
+    return template.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 177, in render
+    return self._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 914, in _resolve_lookup
+    current = current()
+  File "/home/lilichka/beautipro/cart/cart_module.py", line 43, in total
+    wieght_total = int(item['wieght']) * int(item['quantity'])
+KeyError: 'wieght'
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /cart/assets/images/product_2.png
+Not Found: /cart/assets/images/product_1.png
+Not Found: /cart/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_10.jpg
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /cart/assets/images/product_2.png
+Not Found: /cart/assets/images/product_1.png
+Not Found: /static/images/breadcamp_bg_10.jpg
+Not Found: /cart/assets/images/product_3.png
+Not Found: /cart/order_detail/assets/images/product_2.png
+Not Found: /cart/order_detail/assets/images/product_1.png
+Not Found: /static/images/breadcamp_bg_11.jpg
+Not Found: /cart/order_detail/assets/images/product_3.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Internal Server Error: /cart/apply_address/18
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'pay'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/mixins.py", line 21, in dispatch
+    return super(AddressRequirdMixins ,  self ).dispatch(request , *args , **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/cart/views.py", line 101, in post
+    return redirect('pay:main_pay' , order.id)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'pay' is not a registered namespace
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /cart/assets/images/product_1.png
+Not Found: /cart/assets/images/product_2.png
+Not Found: /cart/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_10.jpg
+Not Found: /account/assets/images/product_1.png
+Not Found: /account/assets/images/product_2.png
+Not Found: /account/assets/images/product_3.png
+Not Found: /static/images/login_banner.jpg
+Not Found: /account/assets/images/product_1.png
+Not Found: /account/assets/images/product_2.png
+Not Found: /account/assets/images/product_3.png
+Not Found: /account/assets/images/login_banner.jpg
+hhfdkhkfdbdbf
+6287
+Internal Server Error: /admin/shop/product/21/change/
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1227, in save_model
+    obj.save()
+  File "/home/lilichka/beautipro/shop/models.py", line 124, in save
+    super(Product , self).save()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 981, in _save_table
+    values = [
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 985, in <listcomp>
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 317, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 93, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/base.py", line 49, in save
+    name = self._save(name, content)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/filesystem.py", line 106, in _save
+    fd = os.open(full_path, self.OS_OPEN_FLAGS, 0o666)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 45-48: ordinal not in range(128)
+Internal Server Error: /admin/shop/product/21/change/
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1227, in save_model
+    obj.save()
+  File "/home/lilichka/beautipro/shop/models.py", line 124, in save
+    super(Product , self).save()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 981, in _save_table
+    values = [
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 985, in <listcomp>
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 317, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 93, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/base.py", line 49, in save
+    name = self._save(name, content)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/filesystem.py", line 106, in _save
+    fd = os.open(full_path, self.OS_OPEN_FLAGS, 0o666)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 45-48: ordinal not in range(128)
+Internal Server Error: /admin/shop/product/21/change/
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1227, in save_model
+    obj.save()
+  File "/home/lilichka/beautipro/shop/models.py", line 124, in save
+    super(Product , self).save()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 981, in _save_table
+    values = [
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 985, in <listcomp>
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 317, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 93, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/base.py", line 49, in save
+    name = self._save(name, content)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/filesystem.py", line 106, in _save
+    fd = os.open(full_path, self.OS_OPEN_FLAGS, 0o666)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 45-48: ordinal not in range(128)
+Internal Server Error: /admin/shop/product/21/change/
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1227, in save_model
+    obj.save()
+  File "/home/lilichka/beautipro/shop/models.py", line 124, in save
+    super(Product , self).save()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 981, in _save_table
+    values = [
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 985, in <listcomp>
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 317, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 93, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/base.py", line 49, in save
+    name = self._save(name, content)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/filesystem.py", line 106, in _save
+    fd = os.open(full_path, self.OS_OPEN_FLAGS, 0o666)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 45-48: ordinal not in range(128)
+Internal Server Error: /admin/shop/product/21/change/
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1227, in save_model
+    obj.save()
+  File "/home/lilichka/beautipro/shop/models.py", line 124, in save
+    super(Product , self).save()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 981, in _save_table
+    values = [
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 985, in <listcomp>
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 317, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 93, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/base.py", line 49, in save
+    name = self._save(name, content)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/filesystem.py", line 106, in _save
+    fd = os.open(full_path, self.OS_OPEN_FLAGS, 0o666)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 45-48: ordinal not in range(128)
+Internal Server Error: /admin/shop/product/21/change/
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1227, in save_model
+    obj.save()
+  File "/home/lilichka/beautipro/shop/models.py", line 124, in save
+    super(Product , self).save()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 981, in _save_table
+    values = [
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 985, in <listcomp>
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 317, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 93, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/base.py", line 49, in save
+    name = self._save(name, content)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/filesystem.py", line 106, in _save
+    fd = os.open(full_path, self.OS_OPEN_FLAGS, 0o666)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 45-48: ordinal not in range(128)
+Internal Server Error: /admin/shop/product/21/change/
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1227, in save_model
+    obj.save()
+  File "/home/lilichka/beautipro/shop/models.py", line 124, in save
+    super(Product , self).save()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 981, in _save_table
+    values = [
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 985, in <listcomp>
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 317, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 93, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/base.py", line 49, in save
+    name = self._save(name, content)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/filesystem.py", line 106, in _save
+    fd = os.open(full_path, self.OS_OPEN_FLAGS, 0o666)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 45-48: ordinal not in range(128)
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Forbidden (CSRF cookie not set.): /cart/apply_address/18
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /favicon.ico
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /blog/ggggg
+Not Found: /blog/fffff
+Not Found: /robots.txt
+Internal Server Error: /shop/detail/violet-makeup-waterproof-eyebrow-pencil-with-brush
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/shop/views.py", line 26, in get
+    product = get_object_or_404(Product , slug=slug)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+shop.models.Product.MultipleObjectsReturned: get() returned more than one Product -- it returned 2!
+Not Found: /ads.txt
+Not Found: /llms.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: //ad
+Internal Server Error: /admin/shop/product/21/change/
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1227, in save_model
+    obj.save()
+  File "/home/lilichka/beautipro/shop/models.py", line 134, in save
+    super(Product , self).save()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 981, in _save_table
+    values = [
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/base.py", line 985, in <listcomp>
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 317, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/fields/files.py", line 93, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/base.py", line 49, in save
+    name = self._save(name, content)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/files/storage/filesystem.py", line 106, in _save
+    fd = os.open(full_path, self.OS_OPEN_FLAGS, 0o666)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 43-46: ordinal not in range(128)
+Not Found: /robots.txt
+Not Found: /config.json
+Not Found: /config.json
+Not Found: /robots.txt
+Internal Server Error: /shop/detail/violet-makeup-waterproof-eyebrow-pencil-with-brush
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/shop/views.py", line 26, in get
+    product = get_object_or_404(Product , slug=slug)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+shop.models.Product.MultipleObjectsReturned: get() returned more than one Product -- it returned 2!
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /robots.txt
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /blog/category/fffff
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /blog/category/ggggg
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_1.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /apple-touch-icon-120x120-precomposed.png
+Not Found: /apple-touch-icon-120x120.png
+Not Found: /apple-touch-icon-precomposed.png
+Not Found: /apple-touch-icon.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_3.png
+Not Found: /shop/category/assets/images/product_2.png
+Not Found: /shop/category/assets/images/product_1.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/category/assets/images/product_3.png
+Not Found: /shop/category/assets/images/product_2.png
+Not Found: /shop/category/assets/images/product_1.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/category/assets/images/product_3.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_3.png
+Internal Server Error: /shop/detail/violet-makeup-waterproof-eyebrow-pencil-with-brush
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/shop/views.py", line 26, in get
+    product = get_object_or_404(Product , slug=slug)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+shop.models.Product.MultipleObjectsReturned: get() returned more than one Product -- it returned 2!
+Not Found: /favicon.ico
+Internal Server Error: /shop/detail/violet-makeup-waterproof-eyebrow-pencil-with-brush
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/shop/views.py", line 26, in get
+    product = get_object_or_404(Product , slug=slug)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+shop.models.Product.MultipleObjectsReturned: get() returned more than one Product -- it returned 2!
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_3.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_3.png
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_3.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_3.png
+Internal Server Error: /shop/detail/violet-makeup-waterproof-eyebrow-pencil-with-brush
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/shop/views.py", line 26, in get
+    product = get_object_or_404(Product , slug=slug)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+shop.models.Product.MultipleObjectsReturned: get() returned more than one Product -- it returned 2!
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_3.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_3.png
+Internal Server Error: /shop/detail/violet-makeup-waterproof-eyebrow-pencil-with-brush
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/shop/views.py", line 26, in get
+    product = get_object_or_404(Product , slug=slug)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+shop.models.Product.MultipleObjectsReturned: get() returned more than one Product -- it returned 2!
+Internal Server Error: /shop/detail/violet-makeup-waterproof-eyebrow-pencil-with-brush
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lilichka/beautipro/shop/views.py", line 26, in get
+    product = get_object_or_404(Product , slug=slug)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+shop.models.Product.MultipleObjectsReturned: get() returned more than one Product -- it returned 2!
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_3.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_3.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_3.png
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_1.png
+Not Found: /shop/detail/assets/images/product_2.png
+Not Found: /shop/detail/assets/images/product_3.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /robots.txt
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /account/assets/images/product_1.png
+Not Found: /account/assets/images/product_2.png
+Not Found: /account/assets/images/product_3.png
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /static/images/breadcamp_bg_2.jpeg
+Not Found: /shop/assets/images/product_2.png
+Not Found: /shop/assets/images/product_1.png
+Not Found: /shop/assets/images/product_3.png
+Not Found: /assets/images/product_1.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /robots.txt
+Internal Server Error: /cart/list
+Traceback (most recent call last):
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/loader_tags.py", line 208, in render
+    return template.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 177, in render
+    return self._render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/lilichka/virtualenv/beautipro/3.9/lib/python3.9/site-packages/django/template/base.py", line 914, in _resolve_lookup
+    current = current()
+  File "/home/lilichka/beautipro/cart/cart_module.py", line 49, in total
+    return total
+UnboundLocalError: local variable 'total' referenced before assignment
+Not Found: /cart.html
+Not Found: /robots.txt
+Not Found: /checkout.html
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Not Found: /assets/images/product_1.png
+Not Found: /assets/images/product_2.png
+Not Found: /assets/images/product_3.png
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /media/home/video/Video_230113180406.mp4
+Not Found: /favicon.ico
+Not Found: /robots.txt
+Not Found: /robots.txt

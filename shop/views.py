@@ -3,6 +3,10 @@ from django.views.generic import  TemplateView , ListView , View , DetailView
 
 from mixins import LogoutRequirdMixins
 from shop.models import Favorite, Product , Category , Comment , CategoryParent
+from django.http import FileResponse, Http404
+from django.utils.encoding import iri_to_uri
+import os
+from django.conf import settings
 
 class ShopView(ListView):
     template_name = 'shop/shop.html'
@@ -105,3 +109,4 @@ class MiniToBigPriceProductView(View):
     def get(self , request):
         products = Product.objects.order_by('price')
         return render(request , self.template_name , {'products':products})
+    

@@ -3,6 +3,16 @@ from ckeditor_uploader.fields import RichTextUploadingField
 from django.urls import reverse
 from django.utils.text import slugify
 from account.models import User
+import os
+import uuid
+from django.utils.text import slugify
+
+def upload_to(instance, filename):
+    # پسوند فایل
+    ext = filename.split('.')[-1]
+    # تولید نام یکتا
+    filename = f"{uuid.uuid4()}.{ext}"
+    return os.path.join("shop/images/", filename)
 
 class CategoryParent(models.Model):
     title = models.CharField(max_length=1500 , verbose_name='نام سر دسته')
@@ -51,12 +61,26 @@ class Value(models.Model):
     created = models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return self.value
+        return self.title
     
     class Meta:
         ordering = ('-created',)
         verbose_name_plural = 'حجم ها'
         verbose_name = 'حجم'
+
+class Size(models.Model):
+    title = models.CharField(max_length=550 , verbose_name='نام اصلی' , null=True , blank=True)
+    size = models.CharField(max_length=550 , verbose_name='سایز')
+    quantity = models.IntegerField(default=0 , verbose_name='تعداد')
+    created = models.DateField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title
+    
+    class Meta:
+        ordering = ('-created',)
+        verbose_name_plural = 'سایز ها '
+        verbose_name = 'سایز'
 
 class Product(models.Model):
     title = models.CharField(max_length=1500 , verbose_name='نام کالا')
@@ -66,6 +90,7 @@ class Product(models.Model):
     category_parent = models.ForeignKey(CategoryParent , on_delete=models.CASCADE , related_name='parent_product' , verbose_name='سر دسته' , null=True , blank=True)
     color = models.ManyToManyField(Color , related_name='product_color' , verbose_name='رنگ ها' , null=True , blank=True)
     value_product = models.ManyToManyField(Value , related_name='product_value' , verbose_name='حجم ها' , null=True , blank=True)
+    size = models.ManyToManyField(Size , related_name='product_size' , verbose_name='سایز ها' , null=True , blank=True)
     price = models.BigIntegerField(default=0 , verbose_name='قیمت کالا به تومان')
     post_price = models.BigIntegerField(default=0 , verbose_name='قیمت پست کالا به تومان' , null=True , blank=True)
     discount_percent = models.BigIntegerField(default=0 , null=True , blank=True , verbose_name='درصد تخفیف')
@@ -75,12 +100,12 @@ class Product(models.Model):
     content = RichTextUploadingField(verbose_name='توضیحات کامل')
     ingredients = RichTextUploadingField(verbose_name='مواد تشکیل دهنده')
     how_to_use = RichTextUploadingField(verbose_name='نحوه استفاده')
-    image1 = models.FileField(upload_to='shop/images/' , verbose_name='تصویر کالا' , null=True , blank=True)
-    image2 = models.FileField(upload_to='shop/images/' , verbose_name='تصویر کالا' , null=True , blank=True)
-    image3 = models.FileField(upload_to='shop/images/' , verbose_name='تصویر کالا' , null=True , blank=True)
-    image4 = models.FileField(upload_to='shop/images/' , verbose_name='تصویر کالا' , null=True , blank=True)
-    image5 = models.FileField(upload_to='shop/images/' , verbose_name='تصویر کالا' , null=True , blank=True)
-    image6 = models.FileField(upload_to='shop/images/' , verbose_name='تصویر کالا' , null=True , blank=True)
+    image1 = models.FileField(upload_to='upload_to' , verbose_name='تصویر کالا' , null=True , blank=True)
+    image2 = models.FileField(upload_to=upload_to , verbose_name='تصویر کالا' , null=True , blank=True)
+    image3 = models.FileField(upload_to=upload_to , verbose_name='تصویر کالا' , null=True , blank=True)
+    image4 = models.FileField(upload_to=upload_to , verbose_name='تصویر کالا' , null=True , blank=True)
+    image5 = models.FileField(upload_to=upload_to , verbose_name='تصویر کالا' , null=True , blank=True)
+    image6 = models.FileField(upload_to=upload_to , verbose_name='تصویر کالا' , null=True , blank=True)
     value = models.CharField(max_length=550 , verbose_name='اندازه')
     wieght = models.BigIntegerField(default=0 , verbose_name='وزن' , help_text='گرم')
     inventory = models.BigIntegerField(default=0 , verbose_name='موجودی')

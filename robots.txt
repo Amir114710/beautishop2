@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Allow: /shop/
+Allow: /blog/
+
+Sitemap: https://lilichkala.ir/sitemap.xml
